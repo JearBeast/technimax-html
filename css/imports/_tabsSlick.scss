@@ -1,0 +1,140 @@
+.tabsSlick
+{
+  &__header
+  {
+    margin: 0 -20px;
+
+    border-top: 1px solid #ccd7f0;
+    border-bottom: 1px solid #ccd7f0;
+
+    @media(max-width:767px)
+    {
+      margin: 0 -10px;
+      border: 0;
+    }
+
+    color:#353e8f;
+    font-size: em(15);
+    background: #e4ecff;
+    line-height: 56px;
+
+
+    .icon
+    {
+      vertical-align: middle;
+      position: relative;
+      top:-1px;
+    }
+
+    &__item
+    {
+      padding: 0 22px;
+      border-right: 1px solid #cdd8f1;
+      cursor: pointer;
+      position: relative;
+      border-bottom: 1px solid #ccd7f0;
+      white-space: nowrap;
+      text-align: center;
+
+      @media(max-width:767px){
+        border-right: 0;
+      }
+
+      &--active,
+      &:hover
+      {
+        background: white;
+        border-bottom: 1px solid white;
+        color:#2f2f2f;
+      }
+    }
+  }
+
+  &__add
+  {
+    color:#353e8f;
+    font-size: em(15);
+    line-height: 56px;
+    text-decoration: none;
+    background: #e4ecff;
+    padding: 0 15px;
+
+    .icon
+    {
+      font-size: em(18);
+    }
+
+    &:hover
+    {
+      color:#353e8f;
+      text-decoration: none;
+      background: white;
+    }
+  }
+
+  &__slick
+  {
+    width: 80%;
+    position: relative;
+    padding: 0 24px;
+    margin-bottom: -1px;
+
+    @media(max-width:767px)
+    {
+      padding: 0;
+      width: 100%;
+      display: none;
+    }
+
+    .slick-prev
+    {
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      background: #353e8f;
+      border: 0;
+      width: 24px;
+      color:white;
+      line-height: 56px;
+      text-align: center;
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+
+    .slick-next
+    {
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 100%;
+      background: #353e8f;
+      border: 0;
+      width: 24px;
+      color:white;
+      line-height: 56px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  &__body
+  {
+    padding: 20px 0;
+  }
+
+  &__mobilheader
+  {
+    background: #e4ecff url("images/menu-button.svg") no-repeat right 20px center;
+    background-size: 29px auto;
+    border-top: 1px solid #ccd7f0;
+    border-bottom: 1px solid #ccd7f0;
+    padding: 10px;
+    margin: 0;
+    color: #353e8f;
+    font-size: em(15);
+    font-weight: 300;
+    line-height: 35px;
+    cursor: pointer;
+  }
+}

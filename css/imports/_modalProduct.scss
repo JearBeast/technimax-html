@@ -1,0 +1,280 @@
+.modalProduct {
+  .orange {
+    color: #FD7D1A;
+  }
+
+  .modal-dialog {
+    width: 95%;
+    max-width: 550px;
+  }
+
+  .modal-content {
+    padding: 0;
+  }
+
+  .modal-footer {
+    display: block;
+  }
+
+  .modal-header {
+    display: block;
+  }
+
+  .modal-body {
+    background: #fbfbfb;
+    padding-left: 25px;
+    padding-right: 25px;
+    font: normal normal normal 15px/19px Ubuntu;
+
+    h5 {
+      margin-bottom: 0.25rem;
+
+      a {
+        color: #353E8F !important;
+        font: normal normal normal 15px/19px Ubuntu;
+      }
+    }
+
+    p {
+      font: normal normal normal 14px/18px Ubuntu;
+    }
+
+    .modalProduct-price-no-vat {
+      text-align: left;
+      font-size: 17px;
+      letter-spacing: 0px;
+      color: #2F2F2F;
+      opacity: 1;
+      font-weight: 600;
+      /*font-weight: bold;*/
+    }
+  }
+
+  .close {
+    float: right;
+    font-size: 30px;
+    color: #6A6A6A;
+    border:0;
+    background: #ffffff;
+    //padding-bottom: 0;
+    padding: 0.15rem 1rem 1rem 1rem;
+  }
+
+  .modalProduct-title {
+    text-align: center;
+    font: normal normal normal 30px/36px Ubuntu;
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+  }
+
+  .modalProduct-price {
+    //padding-top: 4px;
+    text-align: left;
+    font: normal normal medium 16px/22px Ubuntu;
+    color: #2F2F2F;
+  }
+
+  .modalProduct-finish {
+    display: inline-block;
+    color:#ffffff;
+    background: #5bab46;
+    font-size: 0.9375rem;
+    padding: 13px 25px;
+    font-weight: bold;
+    border: 2px solid #5bab46;
+    float: right;
+
+    width: 230px;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      background: #488737;
+      border-color: #488737;
+      color: #ffffff;
+    }
+  }
+
+  .btn-continue {
+    color: #e26402;
+    border: 2px solid #e26402;
+    background: #ffffff;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 13px 25px;
+
+    width: 230px;
+    text-align: center;
+
+    &:hover {
+      color: #ffffff;
+      background: #e26402;
+    }
+  }
+
+  .modalProduct-title {
+    font-size: 22px;
+  }
+
+  .modalProduct-description {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .modalProduct-code {
+    font-size: 15px;
+  }
+
+  .modalProduct-configured {
+    margin-top: 5px;
+  }
+
+  .modalProduct-qty {
+    text-align: left;
+    padding-top: 4px;
+
+    input {
+      width: 40px;
+      border: 1px solid #B8B8B8;
+      text-align: center;
+      padding: 6px 0 6px 0;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    a.qty-link {
+      background: #EFEFEF 0% 0% no-repeat padding-box;
+      opacity: 1;
+      width: 30px;
+      height: 33px;
+      display: inline-block;
+      font: normal normal bold 20px/27px Segoe UI;
+      color: #858484;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    a.delete-link {
+      font: normal normal normal 14px Ubuntu;
+      color: #949494;
+
+      span {
+        font: 16px Ubuntu;
+        color: #666666;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: #2f2f2f;
+
+        span {
+          color: #2f2f2f;
+        }
+      }
+    }
+
+    a.delete-link span {
+
+    }
+  }
+
+  .modalProduct-row2 {
+    padding-top: 20px;
+  }
+
+  .modalProduct-price-vat {
+    text-align: left;
+    font: normal normal normal 14px/18px Ubuntu;
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+    margin-top: 3px;
+  }
+
+  @media (max-width: 767px) {
+    .hidden-xs {
+      display:none;
+    }
+
+    .modalProduct-qty {
+      text-align: center;
+      padding-top: 0;
+    }
+
+    .modal-dialog {
+      max-width: 390px;
+    }
+
+    .modalProduct-price {
+      text-align: right;
+      padding-top: 7px;
+    }
+
+    .modal-header {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      .close {
+        padding: 0.5rem 1rem 0 0;
+        margin-top: -0.5rem;
+      }
+    }
+
+    .modalProduct-title {
+      font-size: 22px;
+    }
+
+    .modal-title {
+      padding: 0;
+    }
+
+    .modal-body {
+      h5 {
+        font: normal normal normal 16px/19px Ubuntu;
+        letter-spacing: 0;
+        color: #353E8F;
+
+        a {
+          text-decoration: underline;
+          color: #353E8F !important;
+          font: normal normal normal 16px/19px Ubuntu;
+        }
+      }
+
+      p {
+        font: normal normal normal 15px/20px Ubuntu;
+        margin-bottom: 6px;
+      }
+    }
+
+    .modalProduct-finish {
+      float: none;
+    }
+
+    .modal-footer {
+      text-align: center;
+
+      & > :not(:last-child) {
+        margin: 0 0 5px 0;
+      }
+
+      & > :not(:first-child) {
+        margin-left: 0;
+      }
+    }
+
+    .modalProduct-price-vat {
+      display: none;
+    }
+  }
+}

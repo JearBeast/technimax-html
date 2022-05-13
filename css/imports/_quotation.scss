@@ -1,0 +1,86 @@
+.quotation
+{
+  background: #efefef;
+
+  @media(max-width:767px)
+  {
+    padding-top: 25px;
+    margin: 0 -10px;
+    margin-bottom: 72px;
+  }
+
+  &__text
+  {
+    color:#858484;
+    font-size: em(14);
+    font-weight: 300;
+  }
+
+  &__image
+  {
+    width: 300px;
+
+    @media(max-width:767px)
+    {
+      width: 100%;
+    }
+
+    img
+    {
+      max-width: 200px;
+      max-height: 70px;
+    }
+  }
+
+  &__content
+  {
+    background: url("images/quote.png") no-repeat top 32px left;
+    padding: 27px 0;
+    padding-left: 30px;
+    line-height: 22px;
+    position: relative;
+    padding-right: 45px;
+
+    @media(max-width:767px)
+    {
+      padding-right: 11px;
+      padding-left: 37px;
+      background-position-x: 7px;
+      font-size: em(14);
+      padding-bottom: 46px;
+    }
+
+  }
+
+  &__author
+  {
+    color:#2f2f2f;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 29px;
+
+    strong
+    {
+      font-weight: 700;
+    }
+
+    @media(max-width:767px)
+    {
+      line-height: 26px;
+    }
+  }
+
+  &__button
+  {
+    position: absolute;
+    bottom:-24px;
+    right: 0;
+
+    @media(max-width:767px)
+    {
+      left:12px;
+      right: 12px;
+      text-align: center;
+    }
+  }
+}

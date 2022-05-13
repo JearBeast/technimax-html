@@ -1,0 +1,76 @@
+/*
+Slider clanku ve sloupci
+--------------------------------------------------- */
+.rubrics__slick {
+  margin-bottom: 40px;
+
+  .article {
+    margin-right: 14px;
+
+    .article2__title {
+      margin-bottom: 10px;
+      min-height: 42px;
+      
+      @include breakpoint($desk-wide) {
+        min-height: 10px;
+      }
+    }
+    .article2__info {
+      margin-bottom: 10px;
+      white-space: normal;
+    }
+  }
+
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    @include abs-pos(50% auto auto -10px);
+    transform: translateY(-50%) rotate(180deg);
+    @include wh(24px, 75px);
+    z-index: 5;
+    text-indent: -99999px;
+    border: 0;
+    background: #363E8F url("images/right-arrow-white.svg") no-repeat center center;
+    background-size: auto 16px;
+    transition: $transition;
+
+    &:hover {
+      background-color: #232323;
+    }
+    &.slick-disabled {
+      display: none !important;
+    }
+  }
+  .slick-next.slick-arrow {
+    left: auto;
+    right: -10px;
+    transform: translateY(-50%);
+  }
+  .slick-dots {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+
+      li {
+        padding: 0;
+        margin: 0 4px;
+        display: inline-block;
+        vertical-align: middle;
+
+        button {
+          border: 2px solid #BFBFBF;
+          border-radius: 10px;
+          @include wh(10px, 12px);
+          background: none;
+          font-size: 0;
+          display: block;
+          outline: none !important;
+        }
+        &.slick-active button {
+          border-color: #363E8F;
+          background: #363E8F;
+        }
+      }
+    }
+}

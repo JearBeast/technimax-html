@@ -1,0 +1,137 @@
+.steps
+{
+  background: #e4ecff;
+  margin-bottom: 36px;
+
+  @media(max-width:767px)
+  {
+    margin-bottom: 15px;
+  }
+
+  &__item
+  {
+    width: 25%;
+    border-right: 1px solid white;
+    line-height: 28px;
+    padding: 10px 0;
+    text-decoration: none;
+
+    @media(max-width:767px)
+    {
+      width: 100%;
+      padding-left: 15px;
+      border-bottom: 1px solid white;
+      border-right: 0;
+    }
+
+    &:hover
+    {
+      text-decoration: none;
+
+      .steps__title
+      {
+        font-weight: 700;
+        color:black;
+
+        &:hover
+        {
+          color:black;
+        }
+      }
+    }
+
+    &:last-child
+    {
+      border: 0;
+    }
+
+    &--active
+    {
+      background: #fd7d1a;
+      color:white;
+      position: relative;
+
+      .steps__number
+      {
+        background: white;
+        color:#fd7d1a;
+      }
+
+      &:after
+      {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 22px 22px 0 22px;
+        border-color: #fd7c1a transparent transparent transparent;
+        content: '';
+        position: absolute;
+        top:100%;
+        left:auto;
+        right: auto;
+
+        @media(max-width:767px)
+        {
+          display: none;
+        }
+      }
+
+      &:hover
+      {
+        .steps__title
+        {
+          color:white;
+        }
+      }
+
+      .steps__title
+      {
+        color:white;
+
+        &:hover
+        {
+          color:white!important;
+        }
+      }
+    }
+
+    &-ro {
+      width: 50% !important;
+
+      @media(max-width:767px)
+      {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &__number
+  {
+    color:white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #fd7d1a;
+    border-radius: 50%;
+    text-align: center;
+    font-size: em(19);
+    font-weight: 700;
+    margin-right: 15px;
+
+    &:hover
+    {
+      color:white;
+    }
+  }
+
+  &__title
+  {
+    font-weight: 700;
+    color:black;
+
+    &:hover
+    {
+      color:black;
+    }
+  }
+}

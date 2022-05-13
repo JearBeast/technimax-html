@@ -1,0 +1,87 @@
+/*
+Slide vyhod na HP
+--------------------------------------------------- */
+.advantages {
+  background: #e4ecff;
+  padding: 20px 24px;
+  position: relative;
+  min-height: 97px;
+  overflow: hidden;
+  margin: 0 -10px;
+
+  @include breakpoint($lap-and-up) {
+    margin: 0 -15px;  
+    padding: 17px 40px;
+  }
+  @include breakpoint($desk-wide) {
+    margin: 0 -20px;
+  }
+
+  &__item {
+    color: #232323;
+    font-size: 14px;
+    line-height: 19px;
+    min-height: 62px;
+    padding: 0 12px;
+    text-align: center;
+
+    @include breakpoint($lap-and-up) {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 0 15px;
+    }
+
+    &--icon {
+      font-size: 42px;
+      margin-right: 15px;
+      color: #363E8F;
+      position: relative;
+
+      @include breakpoint($palm) {
+        margin: 0 auto 15px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        min-height: 60px;
+      }
+
+      &:before {
+
+        @include breakpoint($palm) {
+          @include abs-pos(0 auto auto 50%);
+          transform: translateX(-50%);
+          line-height: 60px;
+        }
+      }
+    }
+    &--flip {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    &--big {
+      font-size: 48px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    @include abs-pos(50% auto auto 0);
+    @include wh(24px, 75px);
+    border: 0;
+    text-indent: -99999px;
+    background: #353e8f url("images/right-arrow-white.svg") no-repeat center center;
+    background-size: auto 16px;
+    transform: translateY(-50%) rotate(180deg);
+    transition: $transition;
+
+    &:hover {
+      background-color: #232323;
+    }
+  }
+  .slick-next {
+    left: auto;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,103 @@
+.slickVideo
+{
+  padding: 0 35px;
+  border:1px solid #efefef;
+  position: relative;
+
+  &__item
+  {
+    border-right:1px solid #efefef;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+
+    img
+    {
+      width: 100%;
+    }
+
+    &--video
+    {
+      &:after
+      {
+        position: absolute;
+        top:50%;
+        left:0;
+        z-index: 10;
+        content: "\e99b";
+        font-family: "icomoon";
+        text-align: center;
+        font-size: em(40);
+        opacity: 0.55;
+        height: 38px;
+        margin-top: -27px;
+        width: 100%;
+      }
+    }
+  }
+
+  .slick-prev
+  {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 35px;
+    text-indent: -99999px;
+    border: 0;
+    background: #cccccc;
+    z-index: 1;
+
+    &:after
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 10px;
+      height: 10px;
+      border: 3px solid white;
+      content: '';
+      z-index: 2;
+      border-top: 0;
+      border-right: 0;
+      transform: rotate(45deg);
+      top:50%;
+      left:50%;
+      margin-top: -5px;
+      margin-left: -5px;
+    }
+  }
+
+  .slick-next
+  {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 35px;
+    text-indent: -99999px;
+    border: 0;
+    background: #cccccc;
+    z-index: 1;
+
+    &:after
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 10px;
+      height: 10px;
+      border: 3px solid white;
+      content: '';
+      z-index: 2;
+      border-top: 0;
+      border-right: 0;
+      transform: rotate(225deg);
+      top:50%;
+      left:50%;
+      margin-top: -5px;
+      margin-left: -5px;
+    }
+  }
+}

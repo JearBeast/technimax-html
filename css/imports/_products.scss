@@ -1,0 +1,276 @@
+.products {
+  > .row {
+    > div {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+        background: #efefef;
+        content: '';
+
+        @media(max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 1px;
+        height: 100%;
+        background: #efefef;
+        content: '';
+
+        @media(max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(3n) {
+        &:before {
+          display: none;
+        }
+      }
+
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // slider Akcni nabidka na HP
+  &__slick {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -10px;
+    padding: 0 10px;
+
+    @include breakpoint($lap-and-up) {
+      margin: 0 -15px;
+      padding: 0 15px;
+    }
+    @include breakpoint($desk-wide) {
+      margin: 0 -20px;
+      padding: 0 20px;
+    }
+
+    .slick-list {
+      right: -1px;
+    }
+    .slick-track {
+      display: flex;
+      padding-top: 4px;
+    }
+    .slick-slide.product {
+      background-color: #fff;
+      box-shadow: 0 1px 3px #6E6E6E29;
+      border-radius: 5px;
+      margin-right: 8px;
+      margin-left: 2px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      height: calc(100% - 8px);
+
+      &:after {
+
+        @include breakpoint($palm) {
+          display: none !important;
+        }
+      }
+      .product__code {
+        padding-top: 10px;
+        padding-bottom: 6px;
+      }
+      .product__description {
+        height: auto;
+      }
+      .product__storage {
+        max-width: 100%;
+        padding-top: 10px;
+        margin-bottom: 0;
+
+        @include breakpoint(575px) {
+          padding-top: 3px;
+        }
+      }
+      .button__dropdown {
+        margin-top: 13px;
+      }
+      .button--addToCart {
+        height: 38px;
+        line-height: 38px;
+        padding: 0 15px;
+        background: #5bab46;
+
+        &:hover {
+          background: #4b8e39;
+        }
+      }
+      a.btn-configuration {
+        margin: 10px 0 0;
+        padding-left: 28px;
+        font-size: 14px;
+        color: #6A6A6A;
+        text-align: left;
+        background: url('images/ConfigureIcon.svg') 0 50% no-repeat;
+        background-size: 21px auto;
+
+        &:hover {
+          color: #2F2F2F;
+        }
+        .icon {
+          display: none;
+        }
+      }
+    }
+
+    .slick-prev.slick-arrow,
+    .slick-next.slick-arrow {
+      @include abs-pos(50% auto auto 0);
+      transform: translateY(-50%) rotate(180deg);
+      @include wh(24px, 75px);
+      z-index: 5;
+      text-indent: -99999px;
+      border: 0;
+      background: #363E8F url("images/right-arrow-white.svg") no-repeat center center;
+      background-size: auto 16px;
+      transition: $transition;
+
+      &:hover {
+        background-color: #232323;
+      }
+      &.slick-disabled {
+        display: none !important;
+      }
+    }
+    .slick-next.slick-arrow {
+      left: auto;
+      right: 0;
+      transform: translateY(-50%);
+
+      @include breakpoint($desk-wide) {
+        right: 2px;
+      }
+    }
+    .slick-dots {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+
+      li {
+        padding: 0;
+        margin: 0 4px;
+        display: inline-block;
+        vertical-align: middle;
+
+        button {
+          border: 2px solid #BFBFBF;
+          border-radius: 10px;
+          @include wh(10px, 12px);
+          background: none;
+          font-size: 0;
+          display: block;
+          outline: none !important;
+        }
+        &.slick-active button {
+          border-color: #363E8F;
+          background: #363E8F;
+        }
+      }
+    }
+  }
+
+  &--2 {
+    > .row {
+      > div {
+        position: relative;
+
+        &:after {
+          display: none !important;
+        }
+
+        &:before {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.productAction.webcam {
+  background: #fd7d1a !important;
+}
+
+.productAction.no-webcam {
+  background: #353e8f !important;
+}
+
+.shipping-webcam-divider {
+  display: block;
+  width: 100%;
+  height: 5px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.btn-configuration {
+  display:block;
+  background: #f4be1a;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  padding:3px 0;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+
+.btn-configuration:hover {
+  text-decoration: none;
+  background: #ffc000;
+}
+
+.hp-action-offer {
+  background-color: #F9F9F9;
+  padding: 30px 10px 25px;
+  margin: 0 -10px 30px;
+
+  @include breakpoint($lap-and-up) {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include breakpoint($desk-wide) {
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title--primary {
+
+    @include breakpoint($lap-and-up) {
+      margin-bottom: 20px;
+    }
+  }
+}

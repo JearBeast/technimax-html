@@ -1,0 +1,53 @@
+.text
+{
+  &--primary
+  {
+    color:#858484;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 22px;
+  }
+
+  &--catalog
+  {
+    //color:#858484;
+    font-size: em(14);
+    line-height: 22px;
+
+    h2,h3,h4
+    {
+      color:black;
+      font-size: em(20);
+    }
+
+    a
+    {
+      color: #353e8f;
+      text-decoration: underline;
+    }
+
+    p
+    {
+      padding-bottom: 22px;
+
+      &:last-child
+      {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &--max
+  {
+    max-height: 22*10px;
+    overflow: hidden;
+
+    &--open
+    {
+      max-height: none;
+    }
+  }
+}

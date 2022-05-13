@@ -1,0 +1,200 @@
+.recenze
+{
+  &__first
+  {
+    width: 365px;
+    text-align: center;
+
+    @media(max-width:1199px)
+    {
+      width: 100%;
+    }
+
+    @media(max-width:767px)
+    {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title
+  {
+    color:#2f2f2f;
+    font-size: em(15);
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  &__val
+  {
+    line-height: 43px;
+    font-size: em(25);
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  &__stars
+  {
+    background: url("images/stars-0.jpg") repeat-x left center;
+    height: 31px;
+    width: 185px;
+    margin: auto;
+    position: relative;
+
+    >div
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      background: url("images/stars-1.jpg") repeat-x left center;
+    }
+  }
+
+  &__second
+  {
+    width: 400px;
+    border-right: 1px solid #cecece;
+    padding-right: 30px;
+    margin-right: 0px;
+    line-height: 19px;
+    padding-bottom: 30px;
+
+    @media(max-width:1199px)
+    {
+      padding-right: 0;
+      border-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__third
+  {
+    @media(max-width:1199px)
+    {
+      border-top: 1px solid #cecece;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 100%;
+    }
+
+    p
+    {
+      font-size: em(14);
+      color:#858484;
+      font-weight: 300;
+      padding-bottom: 22px;
+      line-height: 22px;
+
+      @media(max-width:1199px)
+      {
+        padding-bottom: 0;
+      }
+
+      &:last-child
+      {
+        padding-bottom: 0;
+      }
+    }
+
+    a
+    {
+      color:#353e8f;
+    }
+  }
+
+  &__stars2
+  {
+    background: url("images/stars-0.jpg") repeat-x left center;
+    background-size: auto 100%;
+    height: 19px;
+    width: 115px;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 7px;
+
+    >div
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      background: url("images/stars-1.jpg") repeat-x left center;
+      background-size: auto 100%;
+    }
+  }
+
+  &__graph
+  {
+    height: 15px;
+    width: 176px;
+    background: #efefef;
+    position: relative;
+
+    @media(max-width:767px)
+    {
+      width: 100px;
+    }
+
+    >div
+    {
+      position: absolute;
+      left: 0;
+      top:0;
+      height: 100%;
+      background: #858484;
+    }
+  }
+
+  &__counter
+  {
+    white-space: nowrap;
+    color:#858484;
+    font-size: em(14);
+    font-weight: 300;
+    text-align: right;
+    width: 75px;
+
+    span
+    {
+      color:#2f2f2f;
+    }
+  }
+
+  &__title2
+  {
+    color:#2f2f2f;
+    font-size: em(15);
+    font-weight: 700;
+    line-height: 24px;
+    padding: 5px 0;
+  }
+
+  &__stars3
+  {
+    background: url("images/stars-0.jpg") repeat-x left center;
+    background-size: auto 100%;
+    height: 24px;
+    width: 145px;
+    position: relative;
+    margin-bottom: 7px;
+
+    >div
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      background: url("images/stars-1.jpg") repeat-x left center;
+      background-size: auto 100%;
+    }
+  }
+
+  &__review
+  {
+    color:#858484;
+    font-size: em(14);
+    line-height: 22px;
+    font-weight: 300;
+    padding-bottom: 22px;
+  }
+}

@@ -1,0 +1,59 @@
+.videogallery
+{
+  position: relative;
+  padding-left: 46px;
+  width: 292px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  //min-height: 117px;
+
+  @media (max-width:1199px)
+  {
+    width: 272px;
+  }
+
+  @media (max-width:767px)
+  {
+    width: 100%;
+  }
+
+  &__title
+  {
+    position: absolute;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    background: #cccccc;
+    font-weight: 700;
+    font-size: em(15);
+    color:white;
+    left:0;
+    text-align: center;
+    line-height: 36px;
+    z-index: 1;
+    height: 100%;
+  }
+
+  &__item
+  {
+    border: 1px solid #efefef;
+    border-left: 0;
+    display: block;
+    position: relative;
+
+    &:after
+    {
+      position: absolute;
+      top:50%;
+      left:0;
+      z-index: 10;
+      content: "\e99b";
+      font-family: "icomoon";
+      text-align: center;
+      font-size: em(40);
+      opacity: 0.55;
+      height: 38px;
+      margin-top: -27px;
+      width: 100%;
+    }
+  }
+}

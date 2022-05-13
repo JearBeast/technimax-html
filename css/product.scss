@@ -1,0 +1,1232 @@
+@charset "UTF-8";
+@import 'imports/tabs';
+
+#product {
+	position: relative;
+	overflow: visible;
+}
+
+#product h2 {
+	font-size: 13px;
+}
+
+#product h2 a, #product h2 span {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#product #ProductImage {
+	width: 372px;
+	float: left;
+	padding: 10px;
+	overflow: visible;
+	position: relative;
+}
+
+#product .image img {
+	width: 330px;
+}
+
+#product .product {
+	float: left;
+	width: 408px;
+	padding: 10px;
+}
+
+#product .product span {
+	clear: both;
+	float: none;
+}
+
+#product span.coaStitek.info.text {
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#product .product h1 {
+	color: #3b287d !important;
+	font-size: 13px !important;
+	line-height: 18px !important;
+	margin: 10px 0 !important;
+	padding: 0 0 2px 0 !important;
+	background: none !important;
+	width: auto !important;
+	box-shadow: none !important;
+	font-weight: bold !important;
+}
+
+#content #h1 {
+	padding: 8.5px 7px;
+	color: #ffffff !important;
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+	font-size: 12px !important;
+	width: 830px;
+	background: #ee7132;
+	background: -moz-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #5aa51d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4e9300), color-stop(45%, #5faa0f), color-stop(55%, #ed8c4c), color-stop(100%, #ed8c4c));
+	background: -webkit-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: -o-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: -ms-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: linear-gradient(to bottom, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+}
+
+#product #ktginterni {
+	font-size: 100%;
+	line-height: 16px;
+	padding-bottom: 10px;
+	clear: both;
+}
+
+#product #ktginterni span {
+	font-weight: bold;
+}
+
+#product #priceCompare {
+	overflow: hidden;
+}
+
+#product #priceCompare #primary, #product #priceCompare #your {
+	width: 200px;
+	float: left;
+}
+
+#product #priceCompare div h4 {
+	display: block;
+	clear: both;
+	float: none;
+	height: 15px;
+	padding: 10px 15px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+}
+
+#product #priceCompare #primary h4 {
+	background: #2a2499;
+	background: -moz-linear-gradient(top, #2a2499 0%, #2e2999 50%, #403299 51%, #463899 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2a2499), color-stop(50%, #2e2999), color-stop(51%, #403299), color-stop(100%, #463899));
+	background: -webkit-linear-gradient(top, #2a2499 0%, #2e2999 50%, #403299 51%, #463899 100%);
+	background: -o-linear-gradient(top, #2a2499 0%, #2e2999 50%, #403299 51%, #463899 100%);
+	background: -ms-linear-gradient(top, #2a2499 0%, #2e2999 50%, #403299 51%, #463899 100%);
+	background: linear-gradient(to bottom, #2a2499 0%, #2e2999 50%, #403299 51%, #463899 100%);
+}
+
+#product #priceCompare #your h4 {
+	background: #ee7132;
+	background: -moz-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #5aa51d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4e9300), color-stop(45%, #5faa0f), color-stop(55%, #ed8c4c), color-stop(100%, #ed8c4c));
+	background: -webkit-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: -o-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: -ms-linear-gradient(top, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+	background: linear-gradient(to bottom, #ee7132 0%, #ee7132 45%, #ed8c4c 55%, #ed8c4c 100%);
+}
+
+#product #priceCompare div div {
+	float: none;
+	background: #ebebeb;
+	border: 1px solid #ffffff;
+	padding: 5px;
+	text-align: center;
+}
+
+#product #priceCompare #your .priceNoDPH.blue {
+	color: #f15e2b !important;
+}
+
+#product .product .buyOption input {
+	width: 40px;
+}
+
+#product .product .buyOption {
+	width: 408px;
+}
+
+#product .product .buyOption .addToBasketCount {
+	float: right;
+	width: 408px;
+	height: 31px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	span {
+		&.left {
+			width: 109px !important;
+			padding: 0 !important;
+		}
+	}
+}
+
+#product .product .buyOption .addToBasketCount form {
+	overflow: hidden;
+}
+
+#product .product .buyOption form .addToBasketCount .left {
+	display: block;
+	float: left;
+	width: 50%;
+	margin-left: 5px;
+}
+
+#product .product .buyOption form .addToBasketCount .right {
+	float: right !important;
+	width: 50%;
+	padding: 0;
+	display: block;
+	text-align: right;
+}
+
+#productTop .product .buyOption {
+	padding: 0 4px;
+}
+
+#product #productTop .buy, #product #tab1Content .buy {
+	display: block;
+	width: 182px;
+	/*width: 400px;*/
+	height: 50px;
+	margin: 5px;
+	font-size: 16px;
+	color: #373737;
+	text-decoration: none;
+	text-align: right;
+	border: 1px solid #539300;
+	padding: 0;
+	position: relative;
+	float: right;
+	.caret {
+		border-top: 6px dashed #ffffff;
+		border-top: 6px solid \9
+	;
+		border-right: 6px solid transparent;
+		border-left: 6px solid transparent;
+		&-container {
+			height: 50px;
+			padding: 0 5px 0 7px;
+			border-left: 1px solid #bbe7c1;
+		}
+	}
+	.dropdown-menu {
+		margin: 1px 0 0;
+		a {
+			color: #000000;
+			width: 100% !important;
+			padding: 1px 3px !important;
+			/*padding: 5px 3px !important;*/
+			display: flex;
+			font-weight: normal;
+			align-items: center;
+			&:hover {
+				background-color: #e8e8e8;
+				background-image: -webkit-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+				background-image: -o-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+				background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+				background-repeat: repeat-x;
+			}
+
+			&.favourite, &.compare {
+				span {
+					height: 25px !important;
+					width: 25px !important;
+					margin-left: 0;
+					padding: 0 !important;
+				}
+				padding: 1px !important;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.favourite, .compare {
+	&-ico {
+		padding: 3px 5px !important;
+	}
+}
+
+#product .buyNot {
+	display: block;
+	width: 400px;
+	height: 59px;
+	margin: 5px;
+	font-size: 16px;
+	color: #373737;
+	text-decoration: none;
+	text-align: right;
+	overflow: hidden;
+	background: #4e9300;
+	background: -moz-linear-gradient(top, #930000 0%, #aa0f0f 50%, #960000 51%, #a51d1d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #930000), color-stop(50%, #aa0f0f), color-stop(51%, #960000), color-stop(100%, #a51d1d));
+	background: -webkit-linear-gradient(top, #930000 0%, #aa0f0f 50%, #960000 51%, #a51d1d 100%);
+	background: -o-linear-gradient(top, #930000 0%, #aa0f0f 50%, #960000 51%, #a51d1d 100%);
+	background: -ms-linear-gradient(top, #930000 0%, #aa0f0f 50%, #960000 51%, #a51d1d 100%);
+	background: linear-gradient(to bottom, #930000 0%, #aa0f0f 50%, #960000 51%, #a51d1d 100%);
+	border: 1px solid #aa0f0f;
+}
+
+#product .buy a {
+	clear: both;
+	display: inline;
+	overflow: visible;
+	/*width: 67px;*/
+	width: 70px;
+	/*width: 103px;*/
+	/*width: 290px;*/
+	border: none;
+	content: "";
+	height: 16px;
+	background: transparent;
+	float: left;
+	background-image: url('/css/old/images/kosik_50x50.png');
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: left center;
+	color: rgb(255, 255, 255);
+	padding: 18px 10px 18px 70px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#product #products .buy {
+	font-size: 12px;
+	/*width: 185px;*/
+	text-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+#product #products .buy a {
+	background-image: none;
+	width: 290px;
+	/*width: 185px;*/
+	font-size: 12px;
+	text-align: center;
+}
+
+#product #products .product {
+	width: 260px;
+}
+
+#product #products .product span.left {
+	width: 130px;
+}
+
+#product .buyNot {
+
+	&:after {
+		content: "Produkt se již neprodává";
+		float: left;
+		background-image: url('/css/old/images/kosik_50x50.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 0% 0%;
+		color: rgb(255, 255, 255);
+		padding: 22.5px 10px 22.5px 60px;
+		font-size: 16px;
+		font-weight: bold;
+		height: 14px;
+		text-align: left;
+	}
+	&.notContinue {
+		position: relative;
+		&:after {
+			content: "";
+		}
+		span {
+			color: #ffffff;
+			padding: 22.5px 10px 22.5px 10px;
+			font-size: 16px;
+			font-weight: bold;
+			height: 14px;
+			text-align: left;
+			position: absolute;
+			display: block;
+			width: 317px;
+			left: 66px;
+		}
+	}
+}
+
+#product .product #keywords a {
+	color: grey;
+	display: inline-block;
+	border: 1px solid rgb(208, 208, 208);
+	border-radius: 3px;
+	background-color: rgb(234, 234, 234);
+	margin: 2px;
+	padding: 0 2px;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+#product .product #keywords a:hover {
+	color: #29166f;
+}
+
+#product #socialRecommend {
+	position: absolute;
+	bottom: 90px;
+}
+
+#product #socialRecommend div {
+	bottom: 10px;
+}
+
+#mainImage, #mainImage2 {
+	overflow: hidden;
+	cursor: default;
+	display: block;
+}
+
+#mainImage2.nostock {
+	&:before {
+		content: '';
+		background: rgba(255, 255, 255, 0.7);
+		position: absolute;
+		align-items: center;
+		width: 330px;
+		height: 330px;
+		display: flex;
+		justify-content: center;
+		font-size: 17px;
+		color: #000000;
+	}
+	&:after {
+		content: 'Vyprodáno';
+		background: #646464;
+		position: absolute;
+		align-items: center;
+		width: 284px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		font-size: 17px;
+		color: #ffffff;
+		text-transform: uppercase;
+		top: 142px;
+		left: 39px;
+		border-radius: 40px;
+		z-index: 83;
+		font-weight: bold;
+	}
+}
+
+#product #productTop {
+	position: relative;
+	color: #535353;
+	line-height: 16px;
+}
+
+#productTop .skladem {
+	padding: 0;
+	a {
+		display: inline-block;
+	}
+}
+
+#product #tabs {
+	clear: both;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.tabContent table {
+	width: 100%;
+}
+
+.tabContent table td {
+	justify-content: space-around;
+}
+
+#tabsContent table tr {
+	text-align: left;
+}
+
+#tabsContent table tr:nth-child(odd), #tabsContent table tr:nth-child(odd) {
+	background: #f4f4f4;
+}
+
+#tabsContent table tr:nth-child(even), #tabsContent table tr:nth-child(even) {
+	background: #ebebeb;
+}
+
+#tabsContent table td, #tabsContent table th {
+	padding: 10px 12px;
+}
+
+#tab3Content table td, #tab3Content table th {
+	width: 50%;
+}
+
+#tab3Content table td, #tab3Content table th {
+	width: 50%;
+	padding: 10px 12px;
+}
+
+#tab3Content table span.info {
+	margin: 2px 5px;
+}
+
+#tabsContent table tr th {
+	color: #3b287d;
+}
+
+#tabsContent #tab3Content table, #tabsContent #tab6Content table {
+	border-collapse: collapse;
+	width: 821px;
+	float: none !important;
+	margin: 0 auto;
+}
+
+#tabsContent table tr {
+	font-weight: bold;
+	border-right: 1px solid #ffffff;
+}
+
+#tabsContent #tab3Content table tr th, #tabsContent #tab6Content table tr th {
+	font-weight: bold;
+	border: 1px solid #ffffff;
+}
+
+#tabsContent #tab3Content table tr td, #tabsContent #tab6Content table tr td {
+	font-weight: normal;
+	border: 1px solid #ffffff;
+	color: #000000;
+}
+
+#tabsContent form fieldset {
+	margin: 0;
+	border: none;
+}
+
+#tabsContent form fieldset h4 {
+	color: #3b287d;
+	font-weight: bold;
+	text-align: left;
+}
+
+#tabsContent form fieldset span {
+	display: block;
+	vertical-align: middle;
+	padding-top: 4px;
+	height: 26px;
+	line-height: 1;
+	font-size: 11px;
+}
+
+#tabsContent form input {
+	vertical-align: middle;
+	float: left;
+}
+
+#tabsContent form {
+	label {
+		width: 600px;
+		vertical-align: middle;
+		float: left;
+		margin: 3px 2px 0 0;
+		cursor: pointer;
+		display: block;
+	}
+
+	#pridat-recenzi {
+		label {
+			width: 120px;
+		}
+	}
+}
+
+#tabsContent form .price {
+	float: right;
+	padding: 0 5px;
+	font-weight: bold;
+	color: #3b287d;
+}
+
+#tabsContent form .info, #tabsContent .info, #tabsContent .info2 {
+	float: left;
+	margin: 0 5px;
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	background-image: url('/css/old/images/quest_full.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	&:hover {
+		background-position: -14px 0;
+	}
+}
+
+#tabsContent .konfcolumb .info {
+	float: none;
+	display: inline-block;
+}
+
+#tab3Content.parametry {
+	th span {
+		float: left;
+	}
+}
+
+#tabsContent form #resultConf {
+	clear: both;
+	overflow: hidden;
+	padding: 5px 15px;
+	color: #3b287d;
+	font-weight: bold;
+}
+
+#tabsContent form #resultConf #priceTitleConf {
+	float: left;
+	width: 466px;
+	text-align: left;
+	font-size: 16px;
+}
+
+#tabsContent form #resultConf #price {
+	float: right;
+	text-align: right;
+}
+
+#resultConf #price #priceDPHConf {
+	font-size: 14px;
+}
+
+#resultConf #price #priceNoDPHConf {
+	font-size: 16px;
+}
+
+#tabsContent form#konfigurace input[type=submit], #tabsContent form#konfigurace button[type=submit] {
+	clear: both;
+	display: inline;
+	overflow: visible;
+	width: 100%;
+	border: none;
+	content: "";
+	height: 59px;
+	background: transparent;
+	float: left;
+	background-image: url('/css/old/images/kosik_50x50.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 0%;
+	color: rgb(255, 255, 255);
+	padding: 22.5px 10px 22.5px 60px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#konfigurace {
+	font-size: 11px;
+	margin: 2px 9px 0 10px;
+	.server-input {
+		margin: 0 3px 0 5px;
+		width: 37px;
+		text-align: right;
+		color: #535353;
+		font-size: 11px;
+	}
+}
+
+#tabsContent #konfigurace table td {
+	vertical-align: middle;
+}
+
+#konfigurace label {
+	font-size: 11px !important;
+}
+
+#konfigurace h4 {
+	padding: 0;
+	margin: 16px 0 0 0;
+	font-size: 100% !important;
+	font-weight: bold;
+}
+
+#konfigurace .konfcolumb {
+	width: 625px;
+	cursor: pointer;
+	input {
+		margin: 6px 3px 0 5px;
+	}
+	.info {
+		position: relative;
+		top: 2px;
+	}
+}
+
+#konfigurace .subitem .konfcolumb {
+	padding-left: 16px !important;
+}
+
+#tabsContent form .buy, #tabsContent form .buyNot {
+	float: right;
+}
+
+.hidden {
+	display: none;
+}
+
+#product #products {
+	overflow: visible;
+	padding: 10px 0 20px 0;
+	.product {
+		.priceNoDPH {
+			.left {
+				width: 112px;
+			}
+		}
+		.countYes {
+			/*.left {
+				width: 124px;
+			}*/
+			.right {
+				width: 94px;
+			}
+		}
+	}
+}
+
+#product #products .product h3 {
+	padding-bottom: 0;
+	margin: 0;
+}
+
+#product #products .product h4 {
+	margin: 0;
+}
+
+#product #products .product {
+	padding: 0;
+}
+
+#product #products .product .image img {
+	width: auto;
+}
+
+#product #products .product span.left {
+	width: 130px;
+}
+
+#product #products .product .right {
+	width: 104px;
+	height: 18px;
+}
+
+#product #products .product .buyOption {
+	height: 65px;
+}
+
+#product #products .product form {
+	overflow: auto;
+}
+
+#product #products .product .buyOption .buy {
+	float: left;
+	clear: none !important;
+	height: 16px;
+	/*width: 185px;*/
+	padding: 2px 0;
+	border: none;
+	font-weight: bold;
+}
+
+#product #products .product .buyOption div {
+	margin: 0 !important;
+}
+
+#product #products .product .buyOption .addToBasketCount {
+	width: 243px;
+	height: 31px;
+	line-height: 18px;
+	display: block;
+}
+
+#product #products .product .buyOption .addToBasketCount .right {
+	height: 31px;
+	float: right;
+}
+
+#product #products .product .buyOption .addToBasketCount .right form {
+	height: 31px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	float: right;
+}
+
+#product #products .product .buy {
+	clear: both;
+	background: #008400;
+	text-align: center;
+	color: #ffffff;
+	height: 16px;
+	/*width: 168px;*/
+	font-size: 12px;
+}
+
+#product #products .product .buyOption input {
+	width: 20px;
+	margin: 5px;
+}
+
+#product #hodnoceniLeft, #product #hodnoceniRight {
+	width: 369px;
+	float: left;
+	padding: 15px 10px;
+}
+
+#product #hodnoceniRight {
+	border-left: 1px solid #adaabe;
+	width: 359px;
+}
+
+#product #hodnoceniLeft h3 {
+	text-align: center;
+	color: #000000;
+	font-size: 17px;
+	margin: 0;
+	padding: 5px 0;
+}
+
+#product #hodnoceniLeft h3.float {
+	font-size: 30px;
+	color: #449814;
+}
+
+#product h4 {
+	position: relative;
+	font-size: 14px;
+	color: #3b287d;
+	padding: 0;
+	clear: both;
+}
+
+#product #hodnoceniPrumer {
+	width: 160px;
+	height: 32px;
+	background-image: url('/css/old/images/star_empty.png');
+	margin: 0 auto;
+}
+
+#product #hodnoceniPrumerCelkem {
+	height: 32px;
+	background-image: url('/css/old/images/star.png');
+}
+
+#listRecenze {
+	width: 825px;
+	margin: 0 auto;
+
+	#reviewContainer {
+		-moz-column-count: 2;
+		-moz-column-gap: 0;
+		-webkit-column-count: 2;
+		column-count: 2;
+		column-gap: 0;
+		width: 825px;
+	}
+}
+
+#product .selectRecenze {
+	width: 385px;
+	margin: 10px;
+	font-size: 12px;
+	display: inline-table;
+	box-shadow: #c9c9db 0 0 5px 0;
+	background: #ebebeb;
+	border-top: 1px solid #ffffff;
+	color: #3b287d;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #adaabe;
+	line-height: 20px;
+	word-wrap: break-word;
+	vertical-align: top;
+}
+
+#product .selectRecenze:nth-child(3n+0) {
+	clear: both;
+}
+
+#product .selectRecenze p {
+	background: #f4f4f4;
+	border-bottom: 1px solid rgb(173, 170, 190);
+	margin: 0;
+	padding: 12px 4px;
+}
+
+#product .selectRecenze p.bezHodnoceni {
+	font-style: italic;
+	color: #d3d3d3;
+}
+
+#product .hodnoceniPrumer {
+	width: 100px;
+	height: 20px;
+	background-image: url('/css/old/images/star_empty_20x20.png');
+}
+
+#product .hodnoceniPrumerCelkem {
+	height: 20px;
+	background-image: url('/css/old/images/star_20x20.png');
+}
+
+#product #pridat-recenzi form {
+	clear: both;
+	font-size: 12px;
+	box-shadow: rgb(201, 201, 219) 0 0 5px 0;
+	background: #f4f4f4;
+	border-bottom: 1px solid rgb(173, 170, 190);
+	padding: 5px 20px 5px 20px;
+	border-right: 1px solid #adaabe;
+	overflow: hidden;
+	margin-top: 2px;
+
+	span, tr.span {
+		display: flex;
+		align-items: center;
+		float: left;
+	}
+	span {
+		float: none;
+	}
+	tr.span {
+		width: 772px;
+	}
+	tr:nth-child(even) {
+		background: none;
+	}
+	tr.has-error {
+		td {
+			height: 70px;
+		}
+	}
+	td.hodnoceni {
+		max-width: 274px;
+		width: 270px;
+	}
+	td {
+		max-width: none;
+		height: auto;
+	}
+	.row--wrapper {
+		input {
+			padding: 5px;
+			width: 145px;
+		}
+	}
+	.z3m41l {
+		label {
+			width: 47px !important;
+		}
+	}
+	.liveFormArrow {
+		display: block;
+		float: none;
+	}
+}
+
+#product #pridat-recenzi form h3 {
+	padding: 5px 5px 7px 5px;
+	margin: 0 0 8px 0;
+	color: #2e2699;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#product #pridat-recenzi form input {
+	border: 0;
+	width: 155px;
+	border-radius: 3px;
+	height: 18px;
+}
+
+#product #pridat-recenzi form textarea {
+	display: block;
+	width: 750px;
+	height: 100px;
+	padding: 10px;
+}
+
+#product #pridat-recenzi form label {
+	color: #f15e2b;
+	font-weight: bold;
+	width: 240px;
+}
+
+#product #pridat-recenzi form label[for=frm-pridatRecenziForm-poznamka] {
+	clear: both;
+	display: block;
+	padding: 5px;
+}
+
+#product #pridat-recenzi form #addRecenzeStars {
+	float: right;
+	padding: 0 15px;
+}
+
+#product #pridat-recenzi form #addRecenzeStars h4 {
+	margin: 0;
+	font-size: 12px;
+	color: #f15e2b;
+	font-weight: bold;
+	text-align: center;
+}
+
+#product #pridat-recenzi form #addRecenzeStars input[type=radio] {
+	/* display: block !important;
+	 height: 32px !important;
+	 background-image: url('./images/star.png') !important;
+	 content: url('./images/star.png') !important;
+	 width: 32px !important;
+	 opacity: 0;*/
+}
+
+#product #pridat-recenzi form .stars {
+	margin: 0;
+}
+
+#addRecenzeStars label {
+	/* display: block;
+	 height: 32px;
+	 background-image: url('./images/star_empty.png');
+	 width: 32px;
+	 float: left;*/
+}
+
+#addRecenzeStars label:hover, #addRecenzeStars label.active { /*background-image: url('./images/star.png');*/
+}
+
+#product #pridat-recenzi form input[type=submit], #product #pridat-recenzi form button[type=submit] {
+	float: right;
+	display: block;
+	border: 1px solid #787ec5;
+	border-radius: 3px;
+	padding: 1px 5px;
+	height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	width: 90px;
+	margin: 3px 5px;
+	background-color: #06008f;
+	cursor: pointer;
+}
+
+#product #pridat-recenzi form input[type=submit]:hover, #product #pridat-recenzi form button[type=submit]:hover {
+	background-color: #0901c5;
+}
+
+#tab6Content table tr:first-child td, #tabsContent table tr:first-child td img {
+	height: auto !important;
+}
+
+table.konfigurace tr {
+	background: none !important;
+}
+
+table.konfigurace tr td {
+	padding: 0 !important;
+}
+
+table.konfigurace tbody tr td {
+	max-width: none !important;
+}
+
+table.konfigurace tbody tr td:first-child {
+	width: 13px;
+	vertical-align: middle;
+}
+
+table.konfigurace tr:first-child td, table.konfigurace tr:first-child td img {
+	height: auto !important;
+}
+
+#tab3Content table tbody tr:first-child th, #tab3Content table tbody tr:first-child td, #tab3Content table th, #tab3Content table td, #tab6Content table th, #tab6Content table td {
+	height: 31px !important;
+	padding: 0 12px;
+}
+
+#tabsContent #tab7Content {
+	padding: 0 7px !important;
+}
+
+#addRecenzeStars label {
+	width: 30px !important; /*width: auto !important;*/
+}
+
+/*#pridat-recenzi form label{width: auto !important;}*/
+
+#tab7Content form label {
+	width: auto !important;
+}
+
+.imgSkladem {
+	background-image: url('/css/old/images/skladem.png');
+	background-size: 40px 40px;
+	background-position: center center;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+
+#tab4Content .left p {
+	text-align: center;
+}
+
+.stepBack {
+	display: block;
+	position: relative;
+	width: 128px;
+	height: 20px;
+	margin: 5px;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: left;
+	overflow: visible;
+	border: 1px solid #539300;
+	padding: 15.5px 10px 14.5px 60px;
+	color: #ffffff;
+	float: right;
+	font-weight: bold !important;
+}
+
+.stepBack {
+	float: left;
+	background: #ff7c35;
+	background: -moz-linear-gradient(top, #ff7c35 0%, #ff6a00 50%, #ff610c 51%, #ff4c00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7c35), color-stop(50%, #ff6a00), color-stop(51%, #ff610c), color-stop(100%, #ff4c00));
+	background: -webkit-linear-gradient(top, #ff7c35 0%, #ff6a00 50%, #ff610c 51%, #ff4c00 100%);
+	background: -o-linear-gradient(top, #ff7c35 0%, #ff6a00 50%, #ff610c 51%, #ff4c00 100%);
+	background: -ms-linear-gradient(top, #ff7c35 0%, #ff6a00 50%, #ff610c 51%, #ff4c00 100%);
+	background: linear-gradient(to bottom, #ff7c35 0%, #ff6a00 50%, #ff610c 51%, #ff4c00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7c35', endColorstr='#ff4c00', GradientType=0);
+	border: 1px solid #ffb76b;
+}
+
+.stepBack.reCalc:before {
+	clear: both;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
+	width: 60px;
+	border: none;
+	content: "";
+	height: 34px;
+	background: transparent;
+	float: left;
+	background-image: url('/css/old/images/calc.png');
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px 2px;
+
+}
+
+.stepBack:hover {
+	background: #ff4c00;
+	background: -moz-linear-gradient(top, #ff4c00 0%, #ff610c 50%, #ff6a00 51%, #ff7c35 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff4c00), color-stop(50%, #ff610c), color-stop(51%, #ff6a00), color-stop(100%, #ff7c35));
+	background: -webkit-linear-gradient(top, #ff4c00 0%, #ff610c 50%, #ff6a00 51%, #ff7c35 100%);
+	background: -o-linear-gradient(top, #ff4c00 0%, #ff610c 50%, #ff6a00 51%, #ff7c35 100%);
+	background: -ms-linear-gradient(top, #ff4c00 0%, #ff610c 50%, #ff6a00 51%, #ff7c35 100%);
+	background: linear-gradient(to bottom, #ff4c00 0%, #ff610c 50%, #ff6a00 51%, #ff7c35 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4c00', endColorstr='#ff7c35', GradientType=0);
+}
+
+#showAddRecenzeButton {
+	display: block;
+	clear: both;
+	color: #ffffff;
+	background: #06008f;
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+	float: left;
+	padding: 2.5px 7px;
+	-webkit-padding-after: 5px;
+	margin: 3px 7px;
+	font-weight: bold;
+}
+
+#showAddRecenzeButton:hover {
+	background: #0901c5;
+}
+
+#snippet--nafotit {
+	display: none;
+}
+
+.nafotit .takePhotoes, .nafotit input[type=submit], .nafotit button[type=submit] {
+	padding: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.nafotit {
+	display: none;
+}
+
+.nafotit form th {
+	vertical-align: middle;
+}
+
+.nafotit1 {
+	display: block;
+}
+
+.nafotit2 {
+	display: none;
+}
+
+.nafotit2 input {
+	padding: 7.5px;
+}
+
+.nafotit2 input[type=submit], .nafotit2 button[type=submit] {
+	border: none;
+	width: 100%;
+}
+
+.videoLine {
+	overflow: hidden;
+	clear: both;
+	padding: 10px 0;
+}
+
+input.server-input {
+	float: right !important;
+	padding: 4px 6px;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}

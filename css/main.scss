@@ -1,0 +1,352 @@
+$browser-context: 16; // Default
+@import "imports/vars-TB";
+@import "imports/mixins-TB";
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@mixin font1()
+{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+// selection
+::-moz-selection {
+  color: #fff;
+  background: #363E8F;
+}
+::selection {
+  color: #fff;
+  background: #363E8F;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #666;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #666;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #666;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  @include font1();
+  background: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+
+  @media (max-width: 767px)
+  {
+    background: white;
+  }
+}
+
+a
+{
+  color:#2f2f2f;
+
+  &:hover
+  {
+    color:#2f2f2f;
+  }
+}
+
+a,button
+{
+  cursor: pointer;
+}
+
+.container
+{
+  //overflow-x: hidden;
+
+  @media (min-width: 1200px)
+  {
+    max-width: 1230px;
+  }
+
+  @media (max-width: 1199px)
+  {
+    background: white;
+    max-width: none;
+  }
+
+  @media (max-width: 767px)
+  {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .row:not(.no-gutters)
+    {
+      margin-right: -10px;
+      margin-left: -10px;
+
+      >div
+      {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  //@media(max-width:991px)
+  //{
+  //  .row:not(.no-gutters) {
+  //    margin-right: 0;
+  //    margin-left: 0;
+  //
+  //    > .col,
+  //    > [class*="col-"] {
+  //      padding-right: 0;
+  //      padding-left: 0;
+  //    }
+  //  }
+  //}
+  //{
+
+  //}
+}
+
+.row
+{
+  &--10
+  {
+    margin-right: -10px;
+    margin-left: -10px;
+
+    >div
+    {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.green
+{
+  color:#5bab46!important;
+
+  &:hover
+  {
+    color:#5bab46!important;;
+  }
+}
+
+.orange
+{
+  color:#FF8C00!important;
+
+  &:hover
+  {
+    color:#FF8C00!important;;
+  }
+}
+
+.red
+{
+  color:#e00000!important;
+
+  &:hover
+  {
+    color:#e00000!important;;
+  }
+}
+
+a.red
+{
+  &:hover
+  {
+    text-decoration: underline!important;
+  }
+}
+
+.main {
+  padding: 20px 0;
+
+  @include breakpoint($lap-and-up) {
+    padding: 30px 0;
+  }
+  @include breakpoint($desk-wide) {
+    padding: 20px;
+  }
+
+  &__content
+  {
+    margin: 0 -20px;
+
+    &__right
+    {
+      min-width: 905/1200*100%;
+      padding-right: 15px!important;
+      padding-left: 15px!important;
+
+      //@media(max-width:1199px)
+      //{
+      //  max-width: 750px;
+      //}
+    }
+
+    &__left
+    {
+      max-width: 260/1200*100%;
+    }
+  }
+}
+
+.icon
+{
+  vertical-align: middle;
+}
+
+footer//, main
+{
+  overflow: hidden;
+}
+
+.form__label.d-inline-block {
+  width: auto;
+}
+
+// Disable text selection on Collapse title
+//
+.collapse__title, .no-user-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+// Alternative for .no-outline class (see below)
+//
+.slick-prev:focus, .slick-next:focus {
+  outline: none !important;
+}
+
+// Currently only FF is supported
+// TODO: Support Chrome
+//
+.no-outline {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.no-background {
+  background: none;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9997; // cookie & notification bars have 9998+
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 100ms;
+}
+
+@import "imports/header";
+@import "imports/button";
+@import "imports/line";
+@import "imports/footer";
+@import "imports/overeno";
+@import "imports/title";
+@import "imports/text";
+@import "imports/advantages";
+@import "imports/aside";
+@import "imports/product";
+@import "imports/products";
+@import "imports/quotation";
+@import "imports/article";
+@import "imports/article2";
+@import "imports/breadcrumb";
+@import "imports/tabs";
+@import "imports/pagination";
+@import "imports/articles";
+@import "imports/quiz";
+@import "imports/detail";
+@import "imports/config";
+@import "imports/table";
+@import "imports/parameters";
+@import "imports/video";
+@import "imports/recenze";
+@import "imports/collapse";
+@import "imports/kontakty";
+@import "imports/team";
+@import "imports/steps";
+//@import "tableCart";
+@import "imports/discount";
+@import "imports/summary";
+@import "imports/problems";
+@import "imports/tableCart2";
+@import "imports/shipment";
+@import "imports/finalcart";
+@import "imports/form";
+@import "imports/cartfinal";
+@import "imports/selectric";
+@import "imports/noui";
+@import "imports/tabsSlick";
+@import "imports/datatable";
+@import "imports/orangeBox";
+@import "imports/radio";
+@import "imports/radions";
+@import "imports/modal";
+@import "imports/filter";
+@import "imports/fromBlog";
+@import "imports/slickVideo";
+@import "imports/sort";
+@import "imports/gallery";
+@import "imports/videogallery";
+@import "imports/cookie";
+@import "imports/compare";
+@import "imports/tableCart3";
+@import "imports/catalogue";
+@import "imports/modalProduct";
+@import "imports/rubrics";
+@import "imports/hp-slider";
+
+/* Chrome, Safari, Edge, Opera */
+input.detail__cart__amount::-webkit-outer-spin-button,
+input.detail__cart__amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number].detail__cart__amount {
+  -moz-appearance: textfield;
+}

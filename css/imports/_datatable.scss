@@ -1,0 +1,115 @@
+.datatable
+{
+  width: 100%;
+  position: relative;
+
+  .icon
+  {
+    font-weight: 700;
+    color: #353e8f!important;
+    font-size: em(18);
+
+    &:hover
+    {
+      color: lighten(#353e8f,20%)!important;
+      text-decoration: none;
+    }
+  }
+
+  thead th
+  {
+    background: #efefef;
+    border: 0 !important;
+    line-height: 26px;
+    padding: 5px 15px;
+    color: #2f2f2f;
+    font-size: em(14);
+    white-space: nowrap;
+
+    @media(max-width:11199px)
+    {
+      padding: 5px 10px;
+    }
+
+    &:after,
+    &:before
+    {
+      height: 36px;
+      line-height: 36px;
+      bottom: 0 !important;
+    }
+  }
+
+  tfoot th
+  {
+    line-height: 26px;
+    padding: 5px 15px;
+
+    @media(max-width:11199px)
+    {
+      padding: 5px 10px;
+    }
+  }
+
+  td
+  {
+    line-height: 26px;
+    padding: 5px 15px;
+    font-size: em(14);
+
+    @media(max-width:11199px)
+    {
+      padding: 5px 10px;
+    }
+  }
+
+  tfoot
+  {
+    display: table-row-group;
+  }
+
+  &__gray
+  {
+    background: #efefef;
+  }
+
+  &__green
+  {
+    background: #bae2af;
+    color:#2d7b19;
+  }
+
+  &__red
+  {
+    background: #f5d1d1;
+    color:#e00000;
+  }
+}
+
+.dataTables_filter
+{
+  display: none!important;
+}
+
+
+.dataTables_wrapper
+{
+  background: #fbfbfb;
+  border: 1px solid #efefef;
+  border-top: 0;
+}
+
+.dataTables_info
+{
+  color:#858484;
+  font-size: em(14);
+  line-height: 34px;
+  padding: 15px;
+}
+
+table.dataTable
+{
+  margin-top: 0!important;
+  padding-top: 0!important;
+}
+

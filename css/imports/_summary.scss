@@ -1,0 +1,147 @@
+.summary
+{
+  background: #efefef;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  &--2
+  {
+    padding: 15px 0;
+
+    @media(max-width:767px)
+    {
+      padding: 10px;
+    }
+  }
+
+  &--3
+  {
+    padding: 10px;
+  }
+
+  .icon
+  {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  &__free
+  {
+    font-size: em(15);
+    color:#5bab46;
+    line-height: 22px;
+    padding: 5px 0;
+  }
+
+  &__delivery
+  {
+    color:#2f2f2f;
+    font-size: em(15);
+    line-height: 22px;
+    padding: 5px 0;
+
+    a
+    {
+      color:#5bab46;
+    }
+  }
+
+  &__pricetitle1
+  {
+    font-size: em(19);
+    color:#2f2f2f;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 5px 0;
+  }
+
+  &__pricetitle2
+  {
+    font-size: em(15);
+    color:#2f2f2f;
+    line-height: 22px;
+  }
+
+  &__price1
+  {
+    color:#5bab46;
+    font-weight: 700;
+    font-size: em(30);
+    min-width: 160-15px;
+    line-height: 35px;
+    white-space: nowrap;
+
+    @media(max-width:767px)
+    {
+      min-width: 0;
+    }
+  }
+
+  &__price2
+  {
+    color:#2f2f2f;
+    font-size: em(15);
+    min-width: 160-15px;
+    line-height: 22px;
+    white-space: nowrap;
+
+    @media(max-width:767px)
+    {
+      min-width: 0;
+    }
+  }
+
+  &__item
+  {
+    background: #efefef;
+    border-bottom: 2px solid white;
+    line-height: 36px;
+    padding: 0px 17px;
+    font-size: em(15);
+    color:#2f2f2f;
+    font-weight: 700;
+
+    &__title
+    {
+      min-height: 100%;
+      line-height: 22px;
+      padding: 7px 0;
+    }
+
+    &__value
+    {
+      width: 220px;
+      text-align: center;
+      border-left: 2px solid white;
+      min-height: 100%;
+
+      @media(max-width:991px)
+      {
+        width: auto;
+        padding: 0 50px;
+        padding-right: 50-17px;
+      }
+
+      @media(max-width:767px)
+      {
+        padding: 0;
+        padding-left: 10px;
+      }
+    }
+
+    &:last-child
+    {
+      border-bottom: 1px solid #efefef;
+    }
+
+    &:nth-child(2n)
+    {
+      background: #fbfbfb;
+
+      .summary__item__value
+      {
+        border-left: 2px solid #efefef!important;
+      }
+    }
+  }
+}

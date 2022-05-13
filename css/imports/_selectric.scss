@@ -1,0 +1,84 @@
+.selectric
+{
+  height: 34px;
+  line-height: 34px;
+  background: white;
+  padding: 0;
+  margin: 0;
+  text-align: left!important;
+
+  &:after
+  {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 34px;
+    height: 34px;
+    background: #fd7d1a;
+    content: '';
+  }
+
+  &:before
+  {
+    content: "\ea43";
+    font-family: "icomoon";
+    position: absolute;
+    right:0px;
+    top:0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: em(16);
+    vertical-align: middle;
+    z-index: 1;
+    color:white;
+    text-align: center;
+  }
+}
+
+.selectric .label
+{
+  margin: 0;
+  padding: 0 13px;
+  line-height: 34px;
+  color: #2f2f2f;
+  font-size: em(14);
+  padding-right: 13+34px;
+  //min-width: 167px;
+  text-align: left;
+}
+
+.selectric .button
+{
+  display: none;
+}
+
+.selectric-items ul
+{
+  padding: 0!important;;
+  margin-left:0!important;
+}
+
+.selectric-items li
+{
+  line-height: 24px;
+  color: #2f2f2f;
+  font-size: em(14);
+  padding: 5px 13px;
+  text-align: left!important;
+
+  &.highlighted
+  {
+    background: #fd7d1a;
+    color: white;
+  }
+}
+
+.selectric-selectric--gray
+{
+  .selectric
+  {
+    background: #f2f2f2;
+    border: 0;
+  }
+}

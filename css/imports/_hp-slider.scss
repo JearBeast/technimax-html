@@ -1,0 +1,104 @@
+/*
+Hlavni slider nahore na HP
+--------------------------------------------------- */
+.hp-main__slick {
+  margin: -20px -10px 0;
+  position: relative;
+
+  @include breakpoint($lap-and-up) {
+    margin: -30px -15px 0;
+  }
+  @include breakpoint($desk-wide) {
+    margin: -30px -20px 0;
+  }
+
+  .slide {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 77.5%;
+
+      @include breakpoint($desk-and-up) {
+        padding-top: 65%;
+      }
+      @include breakpoint($desk-wide) {
+        padding-top: 50%;
+      }
+    }
+    img {
+      @include abs-pos(0 auto auto 0);
+      @include wh(100%);
+      object-fit: cover;
+    }
+    h1 {
+      position: relative;
+      z-index: 10;
+      @include abs-pos(auto auto 50px 30px);
+      width: calc(100% - 60px);
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 500;
+      text-shadow: 0 0 40px rgba(255,255,255,1);
+
+      @include breakpoint($lap-and-up) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    @include abs-pos(50% auto auto -10px);
+    transform: translateY(-50%) rotate(180deg);
+    @include wh(24px, 75px);
+    z-index: 5;
+    text-indent: -99999px;
+    border: 0;
+    background: #363E8F url("images/right-arrow-white.svg") no-repeat center center;
+    background-size: auto 16px;
+    transition: $transition;
+
+    &:hover {
+      background-color: #232323;
+    }
+    &.slick-disabled {
+      display: none !important;
+    }
+  }
+  .slick-next.slick-arrow {
+    left: auto;
+    right: -10px;
+    transform: translateY(-50%);
+  }
+  .slick-dots {
+      margin: 0;
+      padding: 0;
+      width: calc(100% - 20px);
+      text-align: center;
+      list-style: none;
+      @include abs-pos(auto 18px 10px auto);
+
+      li {
+        padding: 0;
+        margin: 0 4px;
+        display: inline-block;
+        vertical-align: middle;
+
+        button {
+          border: 2px solid #BFBFBF;
+          border-radius: 10px;
+          @include wh(10px, 12px);
+          background: none;
+          font-size: 0;
+          display: block;
+          outline: none !important;
+        }
+        &.slick-active button {
+          border-color: #363E8F;
+          background: #363E8F;
+        }
+      }
+    }
+}

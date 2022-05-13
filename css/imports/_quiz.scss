@@ -1,0 +1,159 @@
+.quiz
+{
+  overflow: hidden;
+
+  &__title
+  {
+    color: #2f2f2f;
+    font-size: em(19);
+    font-weight: 400;
+    line-height: 13px;
+    padding-bottom: 30px;
+  }
+
+  &__question
+  {
+    color: #858484;
+    font-size: em(15);
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 23px;
+  }
+
+  &__checkbox
+  {
+    cursor: pointer;
+    color: #2f2f2f;
+    font-size: em(15);
+    font-weight: 300;
+    line-height: 22px;
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 28px;
+    background: #efefef;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 20px;
+
+    input
+    {
+      position: absolute;
+      top:19px;
+      left:20px;
+    }
+  }
+
+  &__counter1
+  {
+    background: #efefef;
+    height: 68px;
+    min-width: 280px;
+
+    @media(max-width:767px)
+    {
+      min-width: 225px;
+      margin-bottom: 20px;
+    }
+
+    &__title
+    {
+      color: #2f2f2f;
+      font-size: em(15);
+      font-weight: 700;
+      line-height: 18px;
+      padding: 0 33px;
+      display: block;
+      width: 100%;
+      text-align: center;
+
+      @media(max-width:767px)
+      {
+        padding: 0 5px;
+      }
+    }
+
+    &__graph
+    {
+      height: 17px;
+      background: white;
+      margin: 0 10px;
+      margin-top: 10px;
+      position: relative;
+
+      >div
+      {
+        overflow: hidden; // added by unz
+        width: 0; // added by unz
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        background: #5bab46;
+        color: #ffffff;
+        font-size: em(15);
+        font-weight: 700;
+        line-height: 17px;
+        text-align: center;
+        transition : width 1.5s ease;
+      }
+    }
+  }
+
+  &__counter2
+  {
+    text-align: center;
+    background: #efefef;
+    height: 68px;
+    margin-left: 5px;
+    padding: 0 20px;
+
+    @media(max-width:767px)
+    {
+      padding: 0 5px;
+    }
+
+    &__result
+    {
+      color: #5bab46;
+      font-size: em(15);
+      font-weight: 700;
+    }
+
+    &__score
+    {
+      color: #2f2f2f;
+      line-height: 26px;
+      font-weight: 700;
+    }
+  }
+
+  &__results
+  {
+    font-size: em(15);
+    font-weight: 300;
+    line-height: 22px;
+    color: #2f2f2f;
+
+    p
+    {
+      margin-bottom: 22px;
+    }
+
+    ul
+    {
+      color: #858484;
+      padding-top: 0;
+      margin-top: -22px;
+      list-style-type: lower-alpha;
+      padding-left: 17px;
+    }
+
+    strong
+    {
+      font-weight: 700;
+      color: #2f2f2f;
+    }
+  }
+}

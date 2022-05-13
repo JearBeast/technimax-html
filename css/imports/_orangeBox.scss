@@ -1,0 +1,32 @@
+.orangeBox
+{
+  background: #fd7d1a;
+  color:white;
+  padding: 6px 23px;
+  padding-bottom: 20px;
+
+  &__title
+  {
+    font-size: em(19);
+    line-height: 20px;
+    padding: 15px 0;
+  }
+
+  p
+  {
+    line-height: 22px;
+    font-size: em(15);
+  }
+
+  .icon
+  {
+    vertical-align: middle;
+    position: relative;
+    top:-1px;
+  }
+}
+
+.flex
+{
+  display:flex;
+}

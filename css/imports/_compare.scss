@@ -1,0 +1,226 @@
+.compare
+{
+  background: #fbfbfb;
+  border: 1px solid #efefef;
+  font-size: em(14);
+  overflow: hidden;
+  //padding-top: 18px;
+
+  &__scroll {
+    //width: calc(100% - 230px);
+    overflow-x: scroll;
+    //margin-left: 230px;
+    overflow-y: visible;
+    padding: 0;
+
+    @media(max-width: 767px)
+    {
+      margin-left: -1px;
+      width: 100%;
+    }
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  th {
+    //position: absolute;
+    //width: 230px;
+    //left: 36px;
+    position: sticky;
+    min-width:215px;
+    left: 0;
+    top: auto;
+    text-align: center;
+    vertical-align: center;
+    background: #fbfbfb; // added
+    z-index: 10; // added
+  }
+
+  th,td
+  {
+    line-height: 20px;
+    //padding: 10px 0;
+    padding: 10px 3px;
+  }
+
+  tr
+  {
+    .icon
+    {
+      font-size: em(19);
+      vertical-align: middle;
+    }
+
+    &.dark
+    {
+      td,th
+      {
+        background: #efefef;
+      }
+
+      td
+      {
+        border-left: 1px solid #fbfbfb;
+      }
+    }
+
+    td
+    {
+      border-left: 1px solid #f0f0f0;
+    }
+
+    th
+    {
+      @media(max-width: 767px)
+      {
+        //display: none;
+        min-width: 150px; // added
+      }
+
+      @media(max-width: 509px) // added
+      {
+        min-width: 100px;
+      }
+    }
+
+    &.collapsed--2
+    {
+      display: none;
+
+      @media(max-width: 767px)
+      {
+        display: table-row!important;
+      }
+    }
+
+    &.collapsed
+    {
+      cursor: pointer;
+
+      @media(max-width: 767px)
+      {
+        display: none;
+      }
+
+      td,th
+      {
+        background: #e4ecff;
+        height: 40px;
+        overflow: hidden;
+      }
+
+      >th:first-child
+      {
+        background: #e4ecff url("images/arrowDown2.png") no-repeat center right 15px;
+        text-align: left;
+        padding-left: 15px;
+        font-weight: 700;
+      }
+
+      @media(max-width: 767px)
+      {
+        >td
+        {
+          background: #e4ecff url("images/arrowDown2.png") no-repeat center right 15px;
+          text-align: left;
+          padding-left: 15px;
+          font-weight: 700;
+        }
+      }
+
+      td
+      {
+        border-left: 1px solid #e4ecff;
+      }
+    }
+
+    &.collapsed--open
+    {
+      th
+      {
+        background: #e4ecff url("images/arrowUp2.png") no-repeat center right 15px;
+      }
+    }
+
+    &:first-child
+    {
+      td,th
+      {
+        padding-top: 26px;
+      }
+    }
+
+    &:last-child
+    {
+      td,th
+      {
+        padding-top: 26px;
+        padding-bottom: 18px;
+      }
+    }
+  }
+
+  &__col
+  {
+    //width: 232px;
+    width: 215px;
+    text-align: center;
+    position: relative;
+
+    @media(max-width: 767px)
+    {
+      //width: 250px;
+      width: 150px;
+    }
+
+    @media(max-width: 509px)
+    {
+      width: 130px;
+    }
+  }
+
+  &__delete
+  {
+    position: absolute;
+    //top:-5px;
+    top:-15px;
+    right:10px;
+  }
+
+  &__title
+  {
+    color:#353e8f;
+    line-height: 17px;
+    padding: 5px 10px;
+    display: block;
+
+    &:hover
+    {
+      color:#353e8f;
+    }
+  }
+
+  &__image
+  {
+    //height: 178px;
+    padding: 10px;
+
+    img
+    {
+      max-width: 100%;
+    }
+  }
+
+  &__val
+  {
+    //padding: 0 15px;
+  }
+
+  &__disable // added
+  {
+    color: #a7a7a7;
+  }
+}

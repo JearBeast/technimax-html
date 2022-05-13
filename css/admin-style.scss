@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import 'imports/font-awesome';
+
+$backcolor: #212737;
+
+body {
+	background: $backcolor;
+	color: #ffffff;
+	.datagrid, form input {
+		color: #333333;
+	}
+}
+
+h1 {
+	font-size: 26px;
+}
+
+.nav {
+	.dropdown-toggle {
+		cursor: pointer;
+	}
+}
+
+@media (min-width: 767px) {
+	.navbar-nav .dropdown-menu .caret {
+		transform: rotate(-90deg);
+	}
+}
+
+#admin-login-form-container {
+	width: 250px;
+	margin: 75px auto 25px auto;
+
+	ul.errors {
+		list-style-type: none;
+		padding: 0;
+		color: red;
+	}
+}
+
+#content {
+	box-sizing: border-box;
+	.btn-dashboard {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 290px;
+		background: #151c26;
+		color: #ffffff;
+		border: 15px solid #212737;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+			background: #288cfb;
+		}
+	}
+
+}
+
+.container-content {
+	margin-top: 50px;
+	padding: 15px;
+
+	h2 {
+		font-size: 26px;
+		margin: 15px 0 20px 0;
+
+		small {
+			color: #ffffff;
+		}
+	}
+
+	h3 {
+		font-size: 19px;
+	}
+}
+
+.fa {
+	&.glyphicon-ok {
+		font-family: 'Glyphicons Halflings';
+	}
+}
+
+.row-white {
+	background-color: #f0f0f0;
+	color: #000000;
+	padding: 15px;
+}
+
+.insideRubric {
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.alert {
+	position: fixed;
+	width: 100%;
+}

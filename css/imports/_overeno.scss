@@ -1,0 +1,78 @@
+.overeno
+{
+  max-height: 300px;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media(max-width:767px)
+  {
+    width: 100%;
+  }
+
+  //&:before{
+  //  background: url("images/overeno.png") no-repeat center center;
+  //  width: 52px;
+  //  height: 52px;
+  //  display: block;
+  //  content: '';
+  //  top:-37px;
+  //  position: absolute;
+  //  right: 0;
+  //}
+
+  &__item
+  {
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+
+  &__stars
+  {
+    background: url("images/overeno_stars0.png") no-repeat center left;
+    width: 69px;
+    height: 17px;
+    position: relative;
+    left: -5px;
+
+    >div
+    {
+      background: url("images/overeno_stars1.png") no-repeat center left;
+      height: 17px;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
+
+  &__date
+  {
+    font-size: em(12);
+    color:#858484;
+    font-weight: 300;
+    line-height: 17px;
+  }
+
+  &__text
+  {
+    line-height: 16px;
+    font-weight: 300;
+    font-size: em(12);
+    color:#2f2f2f;
+  }
+
+  &__pros
+  {
+    span
+    {
+      color: #5bab46;
+    }
+  }
+
+  &__cons
+  {
+    span
+    {
+      color: #e00000;
+    }
+  }
+}

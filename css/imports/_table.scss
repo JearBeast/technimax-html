@@ -1,0 +1,159 @@
+.table
+{
+  &--primary
+  {
+    background: #fbfbfb;
+
+    th
+    {
+      background: #efefef;
+      border: 0!important;
+      line-height: 26px;
+      padding: 5px 15px;
+      color:#2f2f2f;
+      font-size: em(15);
+      white-space: nowrap;
+    }
+
+    td
+    {
+      line-height: 22px;
+      padding: 10px 15px;
+      font-size: em(15);
+      font-weight: 300;
+      color:#2f2f2f;
+      border: 0;
+      border-bottom: 1px solid #cecece;
+    }
+
+    .th-noPad
+    {
+      background: #efefef;
+      border: 0!important;
+      line-height: 26px;
+      padding: .75rem !important;
+      color:#2f2f2f;
+      font-size: em(15);
+      white-space: nowrap;
+    }
+
+    .td-noPad
+    {
+      line-height: 22px;
+      padding: .75rem !important;
+      font-size: em(15);
+      font-weight: 300;
+      color:#2f2f2f;
+      border: 0;
+      border-bottom: 1px solid #cecece;
+    }
+    
+    a
+    {
+      color: #353e8f;
+      text-decoration: underline;
+
+      &:hover
+      {
+        color: #353e8f;
+        text-decoration: none;
+      }
+    }
+
+    .icon
+    {
+      font-size: em(17);
+    }
+
+    thead,tbody
+    {
+      border: 0;
+      border-spacing:0;
+    }
+  }
+
+  &__buttons
+  {
+    white-space: nowrap;
+  }
+
+  &__sortable
+  {
+    cursor: pointer;
+
+    span
+    {
+      position: relative;
+      padding-right: 15px;
+
+      &:after
+      {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 4.5px 6px 4.5px;
+        border-color: transparent transparent #353e8f transparent;
+        position: absolute;
+        right:0;
+        top:1px;
+        content: '';
+      }
+
+      &:before
+      {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4.5px 0 4.5px;
+        border-color: #353e8f transparent transparent transparent;
+        position: absolute;
+        right:0;
+        bottom:1px;
+        content: '';
+      }
+    }
+
+    &.sorting-asc
+    {
+      span:before
+      {
+        display: none;
+      }
+      span:after
+      {
+        top:5px;
+      }
+    }
+
+    &.sorting-desc
+    {
+      span:after
+      {
+        display: none;
+      }
+      span:before
+      {
+        bottom:5px;
+      }
+    }
+  }
+
+  &__title
+  {
+    background: #efefef;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: em(15);
+  }
+
+  &__val
+  {
+    background: #fbfbfb;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    height: 100%;
+  }
+}

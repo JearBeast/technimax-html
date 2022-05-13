@@ -1,0 +1,224 @@
+.modal{
+  overflow: auto !important;
+
+  &-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    @media(max-width: 1199px) {
+      min-height: calc(100vh - 20px);
+    }
+  }
+
+  &-content
+  {
+    border-radius: 0;
+    border: 0;
+    padding: 0 20px;
+
+    &-blue
+    {
+      background: #e4ecff;
+      padding: 0;
+      //overflow: hidden;
+      margin-top: 40px;
+
+      p
+      {
+        color:#858484;
+        font-size: em(14);
+      }
+    }
+  }
+
+  &-title
+  {
+    font-size: em(26);
+    color:#2f2f2f;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 15px 0;
+  }
+
+  &-dialog
+  {
+    max-width: 1200px;
+
+    @media(max-width:1199px)
+    {
+      max-width: 90%;
+    }
+
+    @media(max-width:767px)
+    {
+      max-width: 100%;
+    }
+
+    &--gallery
+    {
+      max-width: 1060px;
+
+      @media(max-width:1199px)
+      {
+        //max-width: 730px;
+      }
+    }
+  }
+
+  &-close
+  {
+    font-weight: 700;
+    color:#e00000!important;
+
+    .icon
+    {
+      vertical-align: middle;
+    }
+
+    &:hover
+    {
+      text-decoration: none!important;
+      color:darken(#e00000,20%)!important;
+    }
+
+    &--abs
+    {
+      position: absolute;
+      top:15px;
+      right:15px;
+      z-index: 1;
+    }
+  }
+
+  &-titleOut
+  {
+    font-size: em(30);
+    color:white;
+    line-height: 36px;
+    padding: 10px 0;
+    position: absolute;
+    top:-56px;
+  }
+
+  &__mainGallery
+  {
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+
+    @media(max-width:1199px)
+    {
+      width: 470px;
+    }
+
+    @media(max-width:767px)
+    {
+      width: 100%;
+    }
+
+    .slick-prev
+    {
+      background: url("images/arrowLeft.png") no-repeat center center;
+      border: 0;
+      width: 74px;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 1;
+      text-indent: -999999px;
+    }
+
+    .slick-next
+    {
+      background: url("images/arrowLeft.png") no-repeat center center;
+      transform: rotate(180deg);
+      border: 0;
+      width: 74px;
+      height: 100%;
+      position: absolute;
+      top:0;
+      right:0;
+      z-index: 1;
+      text-indent: -999999px;
+    }
+  }
+
+  &__tabs
+  {
+    overflow: hidden;
+    width: 100%;
+
+    &__header
+    {
+      background: #f2f2f2;
+      padding-top: 57px;
+      border-bottom: 1px solid #cdd8f1;
+
+      @media(max-width:767px)
+      {
+        padding-top: 0;
+      }
+
+      em
+      {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        display: inline-block;
+        background: #353e8f;
+        color:white;
+        text-align: center;
+        border-radius: 50%;
+        font-style: normal;
+        font-size: em(13);
+        font-weight: 700;
+        position: relative;
+        top:-7px;
+      }
+
+      >a
+      {
+        background: #f2f2f2;
+        display: block;
+        line-height: 56px;
+        width: 50%;
+        text-align: center;
+
+        &:hover
+        {
+          text-decoration: none;
+        }
+
+        &.active
+        {
+          background: #e4ecff;
+          border: 1px solid #cdd8f1;
+          border-left: 0;
+          border-bottom: 0;
+          margin-bottom: -1px;
+        }
+      }
+    }
+
+    &__body
+    {
+      background: #e4ecff;
+      padding-left: 20px;
+    }
+
+    &__item
+    {
+      max-height: 670px;
+      padding-right: 40px;
+      overflow: auto;
+
+      @media(max-width:1199px)
+      {
+        max-height: 345px;
+      }
+    }
+  }
+}

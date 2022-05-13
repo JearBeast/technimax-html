@@ -1,0 +1,93 @@
+/*
+Clanek ve sloupci
+--------------------------------------------------- */
+#rubrics h3 {
+
+  @include breakpoint($palm) {
+    padding-bottom: 0;
+  }
+}
+.article2 {
+  width: 100%;
+
+  @include breakpoint($palm) {
+    margin-bottom: 1.5rem !important;
+  }
+
+  &__image {
+    margin-top: 3px;
+
+    &--2 {
+      max-width: 240px;
+    }
+
+    @media(max-width:1199px)
+    {
+      max-width: 240px;
+    }
+
+    @media(max-width:767px)
+    {
+      max-width: none;
+      margin-top: 0px;
+    }
+
+    &--3
+    {
+      max-width:100%;
+    }
+  }
+
+  &__title {
+    color: #353e8f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+
+    a {
+      color: #2F2F2F;
+    }
+  }
+  &__info {
+    color: #2f2f2f;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    a {
+      color: #2f2f2f;
+      font-weight: 300;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__text {
+    color: #858484;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__all {
+    color: #353e8f;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: underline;
+    display: block;
+
+    &:hover {
+      color: #353e8f;
+      text-decoration: none;
+    }
+  }
+}

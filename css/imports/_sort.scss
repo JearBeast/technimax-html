@@ -1,0 +1,39 @@
+.sort
+{
+  color:#2f2f2f;
+  font-size: em(15);
+  line-height: 34px;
+
+  &__title
+  {
+    font-weight: 700;
+    color:#2f2f2f;
+    font-size: em(15);
+  }
+
+  &__up
+  {
+    transform: rotate(-90deg);
+    display: inline-block;
+    color:#353e8f;
+    border: 0;
+    text-decoration: none!important;
+    cursor: pointer;
+  }
+
+  &__down
+  {
+    transform: rotate(90deg);
+    display: inline-block;
+    color:#353e8f;
+    border: 0;
+    text-decoration: none!important;;
+    cursor: pointer;
+  }
+
+  &__info
+  {
+    color:#858484;
+    font-size: em(14);
+  }
+}

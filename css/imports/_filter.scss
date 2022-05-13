@@ -1,0 +1,35 @@
+.filter
+{
+  color:#2f2f2f;
+
+  &__title
+  {
+    background: #ced9f1;
+    line-height: 28px;
+    padding: 10px;
+    margin: 0 -20px;
+    line-height: 24px;
+    font-size: em(15);
+  }
+
+  &__subtitle
+  {
+    padding: 10px 0;
+    padding-top: 30px;
+    line-height: 24px;
+    font-size: em(15);
+  }
+
+  &__title2
+  {
+    text-align: center;
+    font-weight: 700;
+    font-size: em(15);
+  }
+
+  &__title3
+  {
+    font-weight: 700;
+    font-size: em(15);
+  }
+}

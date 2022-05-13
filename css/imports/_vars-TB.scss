@@ -1,0 +1,17 @@
+/*
+Breakpointy
+--------------------------------------------------- */
+$custom-lap-start:          768px !default;     // max velikost pro breakpoint mobil
+$custom-desk-start:         992px !default;     // max velikost pro breakpoint tablet
+$custom-desk-wide-start:    1200px !default;    // min velikost pro breakpoint hd
+
+$palm:                      $custom-lap-start - 1 !default;     // Maximalni hodnota od 1px do xxx
+$lap-and-up:                $custom-lap-start !default;         // Minimalni hodnota pro breakpoint tablet a vyse
+$desk-and-up:               $custom-desk-start !default;        // Minimalni hodnota pro breakpoint desktop a vyse
+$desk-wide:                 $custom-desk-wide-start !default;   // Minimalni hodnota pro sirokouhly display
+
+
+/*
+Dalsi
+--------------------------------------------------- */
+$transition:        0.2s all;
