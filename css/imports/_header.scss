@@ -208,7 +208,7 @@
       position: relative;
       
       svg {
-        @include abs-pos(12px auto auto 50%);
+        @include abs-pos(15px auto auto 50%);
         transform: translateX(-50%);
         width: 22px;
       }
@@ -216,15 +216,16 @@
         color: #353e8f
       }
     }
+    &__login {
+      position: relative;
+      color: #353e8f;
 
-    &__login
-    {
-      color:#353e8f;
-      background: url("images/locked-padlock.svg") no-repeat center top 19px;
-      background-size: auto 22px;
-
+      svg {
+        @include abs-pos(15px auto auto 50%);
+        transform: translateX(-50%);
+      }
       &:hover {
-        color: #353e8f
+        color: #353e8f;
       }
     }
 
