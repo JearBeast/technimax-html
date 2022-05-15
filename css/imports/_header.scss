@@ -143,64 +143,50 @@
     }
   }
 
-  &__nav2
-  {
+  &__nav2 {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 5px;
     white-space: nowrap;
 
-    >li
-    {
-      >a
-      {
+    >li {
+
+      >a {
         display: block;
         line-height: 24px;
         padding-left: 15px;
         padding-right: 15px;
         border-right: 1px solid #cecece;
         font-weight: 300;
-        font-size:em(15);
+        font-size: 15px;
+        position: relative;
 
-        &.phone
-        {
-          background: url("images/phone-gray.svg") no-repeat left center;
+        svg {
+          height: auto;
+          @include abs-pos(50% auto auto 0);
+          transform: translateY(-50%);
+        }
+        &.phone {
           padding-left: 36px;
+
+          svg {
+            width: 28px;
+          }
         }
 
-        &.email
-        {
-          background: url("images/email-gray.svg") no-repeat left 25px center;
-          padding-left: 62px;
-        }
+        &.email {
+          padding-left: 55px;
 
-        &.user
-        {
-          background: url("images/arrowdown.png") no-repeat right center;
-          padding-right: 25px;
-          padding-left: 0;
-          border: 0;
-        }
-
-        &.logout
-        {
-          background: url("images/lock-icon-red.svg") no-repeat left 20px center;
-          background-size: 17px auto;
-          padding-left: 40px;
-
-          @media(max-width:1199px)
-          {
-            padding-right: 5px;
+          svg {
+            left: 15px;
+            width: 26px;
           }
         }
       }
-
-      &:last-child
-      {
-        >a
-        {
-          //padding-right: 0;
+      &:last-child {
+        
+        >a {
           border-right: 0;
+          padding-right: 0;
         }
       }
     }
@@ -217,15 +203,17 @@
       width: 100%;
     }
 
-    &__user
-    {
-      color:#353e8f;
-      background: url("images/avatar.svg") no-repeat center top 19px;
-      background-size: auto 22px;
-
-      &:hover
-      {
-        color:#353e8f
+    &__user {
+      color: #353e8f;
+      position: relative;
+      
+      svg {
+        @include abs-pos(12px auto auto 50%);
+        transform: translateX(-50%);
+        width: 22px;
+      }
+      &:hover {
+        color: #353e8f
       }
     }
 
@@ -235,9 +223,8 @@
       background: url("images/locked-padlock.svg") no-repeat center top 19px;
       background-size: auto 22px;
 
-      &:hover
-      {
-        color:#353e8f
+      &:hover {
+        color: #353e8f
       }
     }
 
@@ -261,16 +248,12 @@
         }
       }
 
-      span
-      {
+      span {
         background: #fd7d1a;
-        color:white;
-        position: absolute;
-        bottom:25px;
-        right:0px;
+        color: white;
+        @include abs-pos(auto 0 25px auto);
         border-radius: 50%;
-        width: 18px;
-        height: 18px;
+        @include wh(18px);
         line-height: 18px;
         text-align: center;
         display: inline-block;
@@ -538,22 +521,20 @@
     }
 
     &__cart {
-      background: #5bab46 url("images/shopping-cart-white.svg") no-repeat 50% 8px;
-      background-size: 34px auto;
-      color:#fff;
-      width: 100px !important;
-      height: 70px !important;
+      background-color: #5bab46;
+      color: #fff;
+      @include wh(100px, 70px);
       white-space: nowrap;
       text-align: center;
       font-size: 14px !important;
       font-weight: 500 !important;
       padding-top: 40px !important;
 
-      @media(max-width:767px)
-      {
-        width: auto;
+      svg {
+        @include abs-pos(8px auto auto 50%);
+        transform: translateX(-50%);
+        width: 34px;
       }
-
       span {
         background: #F77F1F;
         color: #fff;
@@ -643,12 +624,15 @@
           padding: 0 13px;
         }
 
-        &.logout
-        {
-          background: url("images/lock-icon.svg") no-repeat center left;
-          background-size: auto 16px;
+        &.logout {
+          position: relative;
           padding-left: 22px;
-          color:#2f2f2f;
+          color: #2f2f2f;
+
+          svg {
+            @include abs-pos(50% auto auto 0);
+            transform: translateY(-50%);
+          }
         }
       }
     }
@@ -735,13 +719,10 @@
       }
       
       .next_level {
-        @include abs-pos(0 10px auto auto);
-        @include wh(30px, 48px);
-        background: url('images/right-arrow-gray.svg') center no-repeat;
-        background-size: 20px auto;
+        @include abs-pos(0 5px auto auto);
+        @include wh(30px, 46px);
         cursor: pointer;
         font-size: 0;
-        margin-right: -5px;
         transition: $transition;
         transform: rotate(0);
 
@@ -749,6 +730,10 @@
           display: none;
         }
 
+        svg {
+          @include abs-pos(50% auto auto 50%);
+          transform: translate(-50%, -50%);
+        }
         &.open {
           transform: rotate(90deg);
         }
@@ -860,13 +845,14 @@
         }
       }
 
-      &:hover
-      {
-        >a
-        {
-          background: white;
+      &:hover {
+        >a {
           color:#353e8f;
           text-decoration: none;
+
+          @include breakpoint($desk-and-up) {
+            background: white;
+          }
 
           //&.item1
           //{
@@ -1029,8 +1015,6 @@
 
         a {
           @include wh(34px, 31px);
-          background: url('images/heart-shape-outline.svg') center no-repeat;
-          background-size: 100%;
           display: inline-block;
           vertical-align: middle;
           font-size: 0;
@@ -1043,6 +1027,9 @@
           &.compare-icon {
             @include wh(46px, 31px);
             background-image: url('images/weight-balance-blue.svg');
+          }
+          svg {
+            @include wh(100%);
           }
           span {
             background-color: #9299E3;
@@ -1091,8 +1078,6 @@
         .next_level {
           @include abs-pos(0 5px auto auto);
           @include wh(30px, 46px);
-          background: url('images/right-arrow-gray.svg') center no-repeat;
-          background-size: 20px auto;
           cursor: pointer;
           font-size: 0;
           transition: $transition;
@@ -1102,6 +1087,10 @@
             display: none;
           }
 
+          svg {
+            @include abs-pos(50% auto auto 50%);
+            transform: translate(-50%, -50%);
+          }
           &.open {
             transform: rotate(90deg);
           }
@@ -1110,8 +1099,7 @@
     }
   }
 
-  &__logo
-  {
+  &__logo {
     background: url("images/logo.png") no-repeat center center;
     background-size: 100% auto;
     width: 161px;
@@ -1130,7 +1118,6 @@
       margin:0;
       padding: 0;
       margin-left: 20px;
-      //margin-bottom: 15px;
       margin-right: 20px;
     }
 
@@ -1371,13 +1358,15 @@
     cursor: pointer;
 
     .icon {
-        background: url("images/user.svg") no-repeat center;
-        background-size: 100% auto;
         @include wh(52px);
         font-size: 0;
         position: relative;
         display: inline-block;
         margin-right: 17px;
+
+        svg {
+          @include wh(100%);
+        }
       }
       .point {
         @include abs-pos(50% 0 auto auto);
