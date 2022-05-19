@@ -1,5 +1,8 @@
-.footer
-{
+/*
+Paticka
+--------------------------------------------------- */
+.footer {
+
   &__newsletter {
     width: 258px;
     overflow: hidden;
@@ -18,35 +21,23 @@
       margin-top: 0;
     }
 
-    //&:before     // stabl chtel vypnout @
-    //{
-    //  position: absolute;
-    //  top:0;
-    //  left:13px;
-    //  content: '@';
-    //  color:#858484;
-    //  font-size: em(14);
-    //  font-weight: 300;
-    //  line-height: 34px;
-    //}
     &__input {
-      width: 172px;
+      @include wh(172px, 34px);
       line-height: 34px;
-      height: 34px;
       padding-left: 12px; //se zavinacem puvodne 37px
       padding-right: 10px;
-      color:#858484;
-      font-size: em(14);
+      color: #858484;
+      font-size: 14px;
       font-weight: 300;
       background: none;
       border: 0;
     }
-    &__button{
+    &__button {
       width: 86px;
       text-align: center;
       padding: 0;
       font-weight: 700;
-      font-size: em(15);
+      font-size: 15px;
     }
   }
   &__blue {
@@ -109,22 +100,27 @@
         margin-bottom: 20px;
         width: 155px;
       }
+
       &__number {
-        font-size: em(16);
+        font: 16px;
         font-weight: 700;
-        color:white;
+        color: white;
         display: block;
         line-height: 21px;
-        padding-left: 26px;
-        background: url("images/phone-white.svg") no-repeat left center;
-        background-size: 16px;
+        padding-left: 25px;
+        position: relative;
 
+        svg {
+          @include abs-pos(50% auto auto 0);
+          transform: translateY(-50%);
+          width: 16px;
+        }
         &:hover {
-          color:white;
+          color: white;
         }
       }
       &__text {
-        font-size: em(12);
+        font-size: 12px;
         font-weight: 300;
         line-height: 16px;
       }
@@ -139,6 +135,7 @@
     }
 
     >li {
+
       >a {
         display: block;
         background: white;
@@ -174,8 +171,7 @@
       }
     }
   }
-
-  &__white{
+  &__white {
     padding: 0 20px;
     background: white;
 
@@ -185,9 +181,9 @@
       padding-right: 30px;
     }
   }
-  &__title{
+  &__title {
     color:#2f2f2f;
-    font-size: em(19);
+    font-size: 19px;
     line-height: 28px;
     padding: 10px 0;
     padding-top: 10+8px;
@@ -206,6 +202,7 @@
     }
 
     >li {
+      
       >a {
         display: block;
         color:#353e8f;

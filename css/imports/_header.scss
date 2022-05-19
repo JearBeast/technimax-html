@@ -1103,8 +1103,7 @@
   &__logo {
     background: url("images/logo.png") no-repeat center center;
     background-size: 100% auto;
-    width: 161px;
-    height:25px;
+    @include wh(161px, 25px);
     margin-left: 20px;
     margin-right: 50px;
 
@@ -1116,7 +1115,7 @@
 
     @media(max-width:1023px)
     {
-      margin:0;
+      margin: 0;
       padding: 0;
       margin-left: 20px;
       margin-right: 20px;
@@ -1126,6 +1125,10 @@
     {
       height: 50px;
     }
+
+    @include breakpoint($palm) {
+      margin: 0 10px;
+    }
   }
 
   #search-url {
@@ -1134,7 +1137,7 @@
     transition: $transition;
 
     @include breakpoint($palm) {
-      @include abs-pos(12px 15px auto auto);
+      @include abs-pos(12px 10px auto auto);
       z-index: 10;
       max-width: 45%;
       min-width: 160px;
@@ -1285,7 +1288,7 @@
   }
 
   &__menu {
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 10px 0 10px 64px;
     color: #353e8f;
     cursor: pointer;

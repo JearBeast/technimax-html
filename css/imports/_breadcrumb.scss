@@ -1,104 +1,100 @@
-.breadcrumb
-{
-  font-size: em(14);
-  color: #858484;
+/*
+Drobeckova navigace
+--------------------------------------------------- */
+.breadcrumb {
+  font-size: 14px;
+  color: #6A6A6A;
   font-weight: 300;
-  line-height: 35px;
-  border-bottom: 1px solid #ccc;
-  margin: 0 -20px;
-  margin-top: -20px;
+  margin: 0;
+  padding: 15px 0 10px;
 
-  &__back
-  {
-    border-bottom: 1px solid #ccc;
+  @include breakpoint($lap-and-up) {
+    line-height: 21px;
+    margin-top: -15px;
+  }
+  @include breakpoint($desk-wide) {
+    margin-top: 0;
+  }
+
+  &__back {
     margin: 0 -10px;
-    padding: 7px 10px;
-    color: #353e8f;
-    font-size: em(14);
+    padding: 7px 10px 7px 28px;
+    color: #6A6A6A;
+    font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    padding-left: 27px;
-    background: url("images/left-arrow.svg") no-repeat top 11px left 10px;
-    background-size: auto 11px;
-  }
-
-  @media(max-width:1199px)
-  {
-    margin: 0 -15px;
-    margin-top: -20px;
-  }
-
-  @media(max-width:767px)
-  {
-    margin: 0 -10px;
-    margin-top: -10px;
-  }
-
-  &__home
-  {
-    background: url("images/home.svg") no-repeat center center;
-    background-size: 100% auto;
-    width: 16px;
-    height: 35px;
-    display: block;
-  }
-
-  li
-  {
     position: relative;
-    padding: 0 20px;
-    padding-right: 20+15px;
 
-    &:last-child
-    {
-      &:after
-      {
-        display: none;
-        padding-right: 0;
+    svg {
+      @include abs-pos(50% auto auto 10px);
+      transform: translateY(-50%);
+    }
+  }
+  &__home {
+    @include wh(16px, 21px);
+    display: inline-block;
+    vertical-align: middle;
+
+    @include breakpoint($lap-and-up) {
+      width: 20px;
+    }
+
+    svg {
+      margin-top: 2px;
+
+      @include breakpoint($lap-and-up) {
+        
+      }
+    }
+  }
+  li {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 0 0;
+
+    @include breakpoint($lap-and-up) {
+      padding: 0 15px 0 5px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+    a {
+      color: #353e8f;
+
+      @include breakpoint($lap-and-up) {
+        display: block; 
       }
     }
 
-    a
-    {
-      display: block;
-      color: #353e8f;
+    &:after {
+      content: '>';
+      margin-left: 6px;
+
+      @include breakpoint($lap-and-up) {
+        content: '';
+        @include abs-pos(50% 0 auto auto);
+        transform: translateY(-50%);
+        @include wh(0);
+        border-style: solid;
+        border-width: 8px 0 8px 6px;
+        border-color: transparent transparent transparent #ccc;
+        margin-left: 0;
+      }
     }
-
-    &:after
-    {
-
-      width:16px;
-      height:36px;
-      content: '';
-      display: block;
-      position: absolute;
-      top:0;
-      right:0;
-
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 18px 0 18px 11px;
-      border-color: transparent transparent transparent #ccc;
-    }
-
-    &:before
-    {
-
-      width:16px;
-      height:36px;
-      content: '';
-      display: block;
-      position: absolute;
-      top:0;
-      right:1px;
-      z-index: 1;
-
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 18px 0 18px 11px;
-      border-color: transparent transparent transparent #fff;
+    &:before {
+      
+      @include breakpoint($lap-and-up) {
+        content: '';
+        @include abs-pos(50% 1px auto auto);
+        transform: translateY(-50%);
+        z-index: 1;
+        @include wh(0);
+        border-style: solid;
+        border-width: 8px 0 8px 6px;
+        border-color: transparent transparent transparent #f6f6f6;
+      }
     }
   }
 }

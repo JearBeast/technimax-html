@@ -73,9 +73,7 @@ a,button
   cursor: pointer;
 }
 
-.container
-{
-  //overflow-x: hidden;
+.container {
 
   @media (min-width: 1200px)
   {
@@ -84,13 +82,13 @@ a,button
 
   @media (max-width: 1199px)
   {
-    background: white;
+    //background: white; // TB comment
     max-width: none;
   }
 
   @media (max-width: 767px)
   {
-    background: white;
+    //background: white; // TB comment
     padding-left: 10px;
     padding-right: 10px;
 
@@ -106,23 +104,6 @@ a,button
       }
     }
   }
-
-  //@media(max-width:991px)
-  //{
-  //  .row:not(.no-gutters) {
-  //    margin-right: 0;
-  //    margin-left: 0;
-  //
-  //    > .col,
-  //    > [class*="col-"] {
-  //      padding-right: 0;
-  //      padding-left: 0;
-  //    }
-  //  }
-  //}
-  //{
-
-  //}
 }
 
 .row

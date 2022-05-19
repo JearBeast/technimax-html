@@ -1,20 +1,42 @@
-.detail {
-  &__title {
-    color: #2f2f2f;
-    font-size: em(30);
-    font-weight: 300;
-    line-height: 28px;
-    padding-top: 24px;
-    padding-bottom: 12px;
-  }
+/*
+Detail produktu
+--------------------------------------------------- */
+body.b-product-detail {
 
+  #snippet--mainContent {
+    background-color: #f6f6f6;
+  }
+  .bg-white {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 0 20px;
+  }
+  .header .bg-white {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.detail {
+
+  &__title {
+    color: #232323;
+    font-size: 25px;
+    line-height: 28px;
+    padding-bottom: 12px;
+    font-weight: 400;
+
+    @include breakpoint($lap-and-up) {
+      font-size: 30px;
+    }
+  }
   &__desc {
     padding-bottom: 47px;
 
     p {
       color: #2f2f2f;
-      font-size: em(15);
-      font-weight: 700;
+      font-size: 14px;
       line-height: 22px;
       margin: 0;
       padding: 0;
@@ -352,18 +374,23 @@
   }
 
   &__mainGallery {
-    margin-top: 28px;
-    width: 455px;
-    height: 455px;
+    margin: 0 -20px 20px;
+    width: calc(100% + 40px);
     overflow: hidden;
-    margin-bottom: 41px;
     position: relative;
 
-    img {
-      //border: 1px solid #cccccc;
-      width: 100%;
+    @include breakpoint($lap-and-up) {
+      @include wh(354px);
+      margin: 0 0 40px;
+    }
+    @include breakpoint($desk-wide) {
+      @include wh(455px);
+      margin: 28px 0 40px;
     }
 
+    img {
+      width: 100%;
+    }
     &__noStorage {
       position: absolute;
       top: 0;
@@ -382,39 +409,29 @@
         padding: 0 35px;
       }
     }
-
-    @media(max-width: 1199px) {
-      width: 354px;
-      height: 354px;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    @media(max-width: 767px) {
-      width: 100%;
-      height: auto;
-    }
-
     .slick-prev,
     .slick-next {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      height: 42px;
-      background: white url("images/arrow_left.png") no-repeat left 7px center;
+      @include abs-pos(50% auto auto 0);
+      @include wh(24px, 75px);
+      background: #363E8F url("images/right-arrow-white.svg") no-repeat center;
+      background-size: auto 16px;
       z-index: 1;
       border: 0;
       text-indent: -9999999px;
-      width: 30px;
       padding: 0;
       margin: 0;
-      margin-top: -21px;
+      transition: $transition;
+      transform: rotate(180deg);
+
+      &:hover {
+        background-color: #232323;
+      }
     }
 
     .slick-next {
       left: auto;
       right: 0;
-      transform: rotate(180deg);
+      transform: rotate(0);
     }
   }
 
@@ -497,17 +514,13 @@
 }
 
 .product__tags--detail {
-  position: absolute;
-  top: 28px;
-  left: 120px;
+  @include abs-pos(28px auto auto -13px);
   z-index: 1;
 
-  @media(max-width: 1199px) {
+  @include breakpoint($lap-and-up) {
     left: 15px;
-    top: 0;
   }
-
-  @media(max-width: 767px) {
-    left: 12px;
+  @include breakpoint($desk-wide) {
+    left: 120px;
   }
 }

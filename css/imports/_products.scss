@@ -65,6 +65,8 @@
 
     .slick-list {
       right: -1px;
+      padding-top: 3px;
+      padding-bottom: 10px;
     }
     .slick-track {
       display: flex;
@@ -72,8 +74,8 @@
     }
     .slick-slide.product {
       background-color: #fff;
-      box-shadow: 0 1px 3px #6E6E6E29;
-      border-radius: 5px;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
       margin-right: 8px;
       margin-left: 2px;
       margin-bottom: 0;
@@ -93,7 +95,7 @@
         padding-bottom: 6px;
       }
       .product__description {
-        height: auto;
+        //height: auto;
       }
       .product__storage {
         max-width: 100%;
